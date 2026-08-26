@@ -52,4 +52,3 @@ My focus is breaking systems ethically and building tools that secure them throu
 | **Linux & Python Automation** | Custom Scanners · Shell Scripting · Recon Tools | ✅ Active |
 | **AI Ops & Security** | Integrating Python automation with threat intelligence | 🔄 In Progress |
 | **Cloud & Infrastructure** | Linux Environments · Network Configuration · OPSEC Nodes | 🔄 In Progress |
-
