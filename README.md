@@ -1,9 +1,9 @@
 <div align="center">
 
-### Offensive Security Specialist | AI Ops Researcher
+### Cloud Security Specialist | DevOps & AI Infrastructure Engineer
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/fahad-a-845013279)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:your-email@example.com)
+[![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:fahadadeel36@gmail.com)
 [![Profile Views](https://komarev.com/ghpvc/?username=FAHAD-s3do&color=blue)](https://github.com/FAHAD-s3do)
 
 </div>
@@ -12,57 +12,56 @@
 
 ### 🔗 About Me
 
-I'm an **Offensive Security & AI Ops Researcher** specialising in **Threat Intelligence, OPSEC, and Automated Reconnaissance systems** — I build secure environments and automation scripts that are fast, anonymous, and production-ready.
+I am a **Cloud Security and Infrastructure Architect** specializing in **DevSecOps, Enterprise Cloud Infrastructure, Automated Threat Intelligence, and Artificial Intelligence Operations**. I focus on building resilient, scalable, and production-ready enterprise environments rather than isolated scripts.
 
-**Cybersecurity Focused** with a deep dive into offensive techniques covering Anonymity, Proxy Rotation, DNS Leak Prevention, Vulnerability Scanning, and Custom Payload Development. Currently completing the **EduQual Level 6 Diploma in AI Ops** at Al Nafi, working through 100+ intensive hands-on labs across the full Linux, Python automation, Data Science, and offensive security stack via the Al-Razzaq framework.
+Currently advancing through comprehensive RQF Level 6 professional pathways spanning **Cloud Cyber Security, DevOps & Cloud Infrastructure, and Artificial Intelligence**, encompassing over 320+ hours of advanced modules including RHEL Enterprise Administration, Kubernetes Cluster Architecture, AWS Cloud Environments, Elastic Stack SIEM Operations, and Machine Learning Model Deployment.
 
-My focus is building automation that actually breaks and secures systems in the real world — ranging from intelligent proxy rotators to autonomous hardware cyber decks powered by local AI agents — not just theoretical concepts in notebooks.
+My core philosophy centers on engineering secure-by-design architectures, automating defensive operations, and orchestrating cloud-native pipelines that enterprises can reliably deploy, monitor, and defend.
 
 ---
 
 ### 🔗 What I Build
 
-* **OffSec & Anonymity Pipelines** — End-to-end secure environments using Tails OS and the Tor network, featuring automated proxy rotation (`stem`, `requests`), SOCKS5 integration, and advanced DNS leak prevention frameworks.
-* **Security Automation & Tooling** — Python-based custom tooling including advanced subdomain scanners (`subdomain_scanner.py`), network mapping scripts, and Tor controllers (`tor_controller.py`) for automated red teaming.
-* **Autonomous Cyber Decks** — Designing and architecting custom hardware cyber decks for offensive security operations, integrated with local AI agents for real-time threat analysis and decision-making.
-* **Threat Intelligence & OSINT** — Automated reconnaissance workflows, open-source intelligence gathering, target mapping, and building secure investigative nodes to maintain OPSEC during research.
-* **AI Ops & Data Engineering** — Machine Learning integration encompassing Feature Engineering, Dimensionality Reduction, and Clustering models to analyze security datasets and identify network anomalies.
+* **Enterprise Cloud & Kubernetes Architectures** — Designing and deploying production-grade container orchestration clusters via Kubernetes Administration, AWS Cloud Native infrastructure, and automated infrastructure-as-code pipelines.
+* **DevSecOps & SIEM Security Operations** — Implementing centralized log analytics, threat hunting frameworks, and vulnerability assessment protocols using enterprise-grade Elastic Stack and automated security hardening workflows.
+* **AI & Machine Learning Engineering** — Developing neural network pipelines, computer vision models, and natural language processing architectures integrated seamlessly within automated backend systems.
+* **Advanced Systems & Infrastructure Automation** — Orchestrating large-scale enterprise server administration, secure network configurations, and comprehensive compliance auditing frameworks (ISO, PCI-DSS, NIST).
 
 ---
 
-### 🔗 Tech Stack
+### 🔗 Tech Stack & Ecosystems
 
 <div align="center">
 
-**Offensive Security & OPSEC**
+**Cloud Computing & Enterprise Infrastructure**
 <br>
-<img src="https://skillicons.dev/icons?i=kali,linux,bash,regex" />
+<img src="https://skillicons.dev/icons?i=aws,gcp,azure,docker,kubernetes,terraform,vagrant" />
 <br>
-![Tor Network](https://img.shields.io/badge/Tor_Network-Anonymity-7D4698?style=flat&logo=torproject&logoColor=white) ![Tails OS](https://img.shields.io/badge/Tails_OS-OPSEC-56347C?style=flat) ![Nmap](https://img.shields.io/badge/Nmap-Recon-2B2B2B?style=flat) ![OSINT](https://img.shields.io/badge/OSINT-Research-black?style=flat)
+![AWS Cloud](https://img.shields.io/badge/AWS-Architecture-FF9900?style=flat&logo=amazonaws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=flat&logo=kubernetes&logoColor=white) ![Red Hat Linux](https://img.shields.io/badge/RHEL-Enterprise-EE0000?style=flat&logo=redhat&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-IaC-844FBA?style=flat&logo=terraform&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-Containers-2496ED?style=flat&logo=docker&logoColor=white) ![OpenStack](https://img.shields.io/badge/OpenStack-Cloud-RED?style=flat&logo=openstack&logoColor=white)
 
 <br>
 
-**Programming & Automation**
+**DevSecOps, SIEM & Security Operations**
 <br>
-<img src="https://skillicons.dev/icons?i=py,github,git,vscode" />
+<img src="https://skillicons.dev/icons?i=ansible,jenkins,gitlab,grafana,nagios" />
 <br>
-![Stem](https://img.shields.io/badge/Python_Stem-Proxy-3776AB?style=flat&logo=python&logoColor=white) ![Requests](https://img.shields.io/badge/Requests-Automation-3776AB?style=flat&logo=python&logoColor=white)
+![Elastic Stack](https://img.shields.io/badge/Elastic_Stack-SIEM-005571?style=flat&logo=elastic&logoColor=white) ![Wazuh](https://img.shields.io/badge/Wazuh-SOC_Monitoring-00bfff?style=flat) ![Ansible](https://img.shields.io/badge/Ansible-Automation-EE0000?style=flat&logo=ansible&logoColor=white) ![CI/CD](https://img.shields.io/badge/CI%2FCD-Pipelines-20232A?style=flat&logo=appveyor&logoColor=white) ![Vulnerability Assessment](https://img.shields.io/badge/VAPT-Security-darkred?style=flat) ![ISO Standards](https://img.shields.io/badge/ISO_27001-Compliance-blue?style=flat)
 
 <br>
 
-**AI & Machine Learning**
+**Artificial Intelligence & Data Engineering**
 <br>
-<img src="https://skillicons.dev/icons?i=tensorflow,scikitlearn,pytorch" />
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,scikitlearn" />
 <br>
-![Data Science](https://img.shields.io/badge/Data_Science-Clustering-F7931E?style=flat) ![Local AI Agents](https://img.shields.io/badge/Local_AI-Agents-000000?style=flat)
+![Deep Learning](https://img.shields.io/badge/Deep_Learning-Neural_Networks-FF6F00?style=flat&logo=tensorflow&logoColor=white) ![Computer Vision](https://img.shields.io/badge/Computer_Vision-CV-4B0082?style=flat) ![NLP](https://img.shields.io/badge/NLP-Text_Analytics-008080?style=flat) ![Data Pipelines](https://img.shields.io/badge/Data_Pipelines-ETL-F7931E?style=flat)
 
 <br>
 
-**Virtualization & Infrastructure**
+**Systems Engineering & Scripting Frameworks**
 <br>
-<img src="https://skillicons.dev/icons?i=docker,ubuntu,debian,windows" />
+<img src="https://skillicons.dev/icons?i=py,bash,linux,git,github,vscode" />
 <br>
-![QEMU-KVM](https://img.shields.io/badge/QEMU--KVM-Hypervisor-orange?style=flat) ![Cyber Deck](https://img.shields.io/badge/Hardware-Cyber_Deck-red?style=flat)
+![Python Automation](https://img.shields.io/badge/Python-Automation-3776AB?style=flat&logo=python&logoColor=white) ![Bash Scripting](https://img.shields.io/badge/Bash-Shell_Scripting-4EAA25?style=flat&logo=gnubash&logoColor=white) ![SCADA/ICS](https://img.shields.io/badge/SCADA_ICS-Security-gray?style=flat)
 
 </div>
 
@@ -70,11 +69,9 @@ My focus is building automation that actually breaks and secures systems in the 
 
 ### 🔗 Currently Building
 
-| Domain | Path | Status |
+| Domain | Path / Architecture Focus | Status |
 | :--- | :--- | :--- |
-| 🛡️ **Cybersecurity** | Tails OS · Tor Network · Proxy Rotation (`stem`) · OPSEC | 🔄 In Progress |
-| 🐍 **Python Tooling** | Subdomain Scanners · `tor_controller.py` · Recon Tools | 🔄 In Progress |
-| 🧠 **AI & ML Ops** | Feature Engineering · Clustering (Labs 37/38) · Linear Models | 🔄 In Progress |
-| ⚙️ **Systems & Hardware** | Autonomous Cyber Deck · Local AI Agents Integration | 🔄 In Progress |
-| 🐧 **Linux Deep Dive** | Advanced Shell Scripting · Process Management · QEMU-KVM | ✅ Active |
-| 🎓 **Core Academics** | Computer Science & Physics · Higher Secondary Education | ✅ Active |
+| ☁️ **Cloud Computing** | AWS Architecture · Cluster Design · Scalable Cloud-Native Infrastructure | 🔄 In Progress |
+| 🔒 **Cybersecurity** | Elastic Stack SIEM · Vulnerability Frameworks · Enterprise Security Auditing | 🔄 In Progress |
+| ⚙️ **DevOps & SysOps** | Kubernetes Administration · Enterprise Automation · CI/CD Toolchains | 🔄 In Progress |
+| 🤖 **Artificial Intelligence & ML** | Neural Networks · Model Deployment · Advanced Data Engineering Pipelines | 🔄 In Progress |
