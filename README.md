@@ -80,4 +80,4 @@ My core philosophy centers on engineering secure-by-design architectures, automa
 | 📊 **Data Engineering** | Spark · ClickHouse · ETL/ELT · NoSQL · AI/ML Integration | 🔄 In Progress |
 | ⚙️ **DevOps Toolchain** | ArgoCD · Vault · Helm · Tekton · Drone CI · OpenTelemetry | 🔄 In Progress |
 | ☁️ **Red Hat Advanced** | OpenShift Admin II & III · OpenStack · Virtualization | 🔄 In Progress |
-| 🤖 **Artificial Intelligence** | LLM Fine-tuning · RAG · Deep Learning Pipelines | 🔄 In Progress |
+| 🤖 **Artificial Intelligence** | LLM Fine-tuning · RAG · Deep Learning Pipelines 
