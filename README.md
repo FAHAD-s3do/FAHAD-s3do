@@ -31,24 +31,25 @@ My focus is breaking systems ethically and building tools that secure them throu
 
 <div align="center">
 
-**Languages & Scripting**
+#### Languages & Scripting
 <img src="https://skillicons.dev/icons?i=py,bash" />
 
-**OffSec & Anonymity**
+#### OffSec & Anonymity
 <img src="https://skillicons.dev/icons?i=linux,kali,git,github" />
 
-**Containers & Infrastructure**
+#### Containers & Infrastructure
 <img src="https://skillicons.dev/icons?i=docker,vscode" />
 
 </div>
 
 ---
 
-### 📊 Currently Building
+### Currently Building
 
-| Domain | Path / Focus | Status |
+| Domain | Path / Project Focus | Status |
 | :--- | :--- | :--- |
 | **Offensive Security & OSINT** | Tails OS · Tor Network · Proxy Rotation (`stem`, `requests`) | 🔄 In Progress |
 | **Linux & Python Automation** | Custom Scanners · Shell Scripting · Recon Tools | ✅ Active |
 | **AI Ops & Security** | Integrating Python automation with threat intelligence | 🔄 In Progress |
 | **Cloud & Infrastructure** | Linux Environments · Network Configuration · OPSEC Nodes | 🔄 In Progress |
+
