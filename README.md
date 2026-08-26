@@ -1,5 +1,6 @@
+<div align="center">
 
-### Cloud Security Specialist | DevOps & AI Infrastructure Engineer
+### AI | Cyber Security | Offensive Security & Red Teaming | Cloud Infrastructure
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/fahad-a-845013279)
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:fahadadeel36@gmail.com)
@@ -68,9 +69,11 @@ My core philosophy centers on engineering secure-by-design architectures, automa
 
 ### 🔗 Currently Building
 
-| Domain | Path / Architecture Focus | Status |
+| Domain | Path | Status |
 | :--- | :--- | :--- |
-| ☁️ **Cloud Computing** | AWS Architecture · Cluster Design · Scalable Cloud-Native Infrastructure | 🔄 In Progress |
-| 🔒 **Cybersecurity** | Elastic Stack SIEM · Vulnerability Frameworks · Enterprise Security Auditing | 🔄 In Progress |
-| ⚙️ **DevOps & SysOps** | Kubernetes Administration · Enterprise Automation · CI/CD Toolchains | 🔄 In Progress |
-| 🤖 **Artificial Intelligence & ML** | Neural Networks · Model Deployment · Advanced Data Engineering Pipelines | 🔄 In 
+| 🛜 **Kubernetes** | KCNA → KCSA → CKA → CKAD → CKS | 🔄 In Progress |
+| 🛡️ **Cybersecurity** | VAPT · SIEM · OSINT · Offensive Security Frameworks | 🔄 In Progress |
+| 📊 **Data Engineering** | Spark · ClickHouse · ETL/ELT · NoSQL · AI/ML Integration | 🔄 In Progress |
+| ⚙️ **DevOps Toolchain** | ArgoCD · Vault · Helm · Tekton · Drone CI · OpenTelemetry | 🔄 In Progress |
+| ☁️ **Red Hat Advanced** | OpenShift Admin II & III · OpenStack · Virtualization | 🔄 In Progress |
+| 🤖 **Artificial Intelligence** | LLM Fine-tuning · RAG · Deep Learning Pipelines | 🔄 In Progress |
