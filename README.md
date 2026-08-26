@@ -1,4 +1,3 @@
- align="center">
 
 ### Cloud Security Specialist | DevOps & AI Infrastructure Engineer
 
