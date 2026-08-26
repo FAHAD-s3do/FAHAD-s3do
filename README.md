@@ -73,4 +73,4 @@ My core philosophy centers on engineering secure-by-design architectures, automa
 | ☁️ **Cloud Computing** | AWS Architecture · Cluster Design · Scalable Cloud-Native Infrastructure | 🔄 In Progress |
 | 🔒 **Cybersecurity** | Elastic Stack SIEM · Vulnerability Frameworks · Enterprise Security Auditing | 🔄 In Progress |
 | ⚙️ **DevOps & SysOps** | Kubernetes Administration · Enterprise Automation · CI/CD Toolchains | 🔄 In Progress |
-| 🤖 **Artificial Intelligence & ML** | Neural Networks · Model Deployment · Advanced Data Engineering Pipelines | 🔄 In Progress |
+| 🤖 **Artificial Intelligence & ML** | Neural Networks · Model Deployment · Advanced Data Engineering Pipelines | 🔄 In 
