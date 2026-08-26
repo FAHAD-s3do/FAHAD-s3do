@@ -2,7 +2,9 @@
 
 <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&duration=3500&pause=1000&color=3399FF&center=true&vCenter=true&width=500&lines=AI+%7C+Cyber+Security;Offensive+Security+%26+Red+Teaming;Cloud+Infrastructure" alt="Typing SVG" />
 
-### Hi there, I'm Fahad 👋
+<br><br>
+<h2>Hi there, I'm Fahad 👋</h2>
+<br>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/fahad-a-845013279)
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:fahadadeel36@gmail.com)
