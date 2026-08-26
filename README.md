@@ -1,10 +1,8 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=18&duration=3500&pause=1000&color=3399FF&center=true&vCenter=true&width=500&lines=AI+%7C+Cyber+Security;Offensive+Security+%26+Red+Teaming;Cloud+Infrastructure" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=3399FF&center=true&vCenter=true&width=500&lines=Hi+there,+I'm+Fahad+👋;AI+|+Cyber+Security;Offensive+Security+&+Red+Teaming;Cloud+Infrastructure" alt="Typing SVG" />
 
 <br><br>
-<h2>Hi there, I'm Fahad 👋</h2>
-<br>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/fahad-a-845013279)
 [![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:fahadadeel36@gmail.com)
@@ -80,4 +78,4 @@ My core philosophy centers on engineering secure-by-design architectures, automa
 | 📊 **Data Engineering** | Spark · ClickHouse · ETL/ELT · NoSQL · AI/ML Integration | 🔄 In Progress |
 | ⚙️ **DevOps Toolchain** | ArgoCD · Vault · Helm · Tekton · Drone CI · OpenTelemetry | 🔄 In Progress |
 | ☁️ **Red Hat Advanced** | OpenShift Admin II & III · OpenStack · Virtualization | 🔄 In Progress |
-| 🤖 **Artificial Intelligence** | LLM Fine-tuning · RAG · Deep Learning Pipelines 
+| 🤖 **Artificial Intelligence** | LLM Fine-tuning · RAG · Deep Learning Pipelines | 🔄 In Progress |
