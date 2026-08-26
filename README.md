@@ -2,19 +2,6 @@
 
 # 🛡️ Offensive Security & AI Ops Enthusiast
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](Aap_Ka_LinkedIn_Link)
-[![Profile Views](https://komarev.com/ghpvc/?username=FAHAD-s3do&color=brightgreen)](https://github.com/FAHAD-s3do)
-
-</div>
-
----
-
-### 🔍 About Me
-
-<div align="center">
-
-# 🛡️ Offensive Security & AI Ops Enthusiast
-
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/fahad-a-845013279)
 [![Profile Views](https://komarev.com/ghpvc/?username=FAHAD-s3do&color=brightgreen)](https://github.com/FAHAD-s3do)
 
@@ -44,7 +31,14 @@ My focus is breaking systems ethically and building tools that secure them throu
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,linux,bash,git,github,docker,vscode" />
+**Languages & Scripting**
+<img src="https://skillicons.dev/icons?i=py,bash" />
+
+**OffSec & Anonymity**
+<img src="https://skillicons.dev/icons?i=linux,kali,git,github" />
+
+**Containers & Infrastructure**
+<img src="https://skillicons.dev/icons?i=docker,vscode" />
 
 </div>
 
@@ -57,3 +51,4 @@ My focus is breaking systems ethically and building tools that secure them throu
 | **Offensive Security & OSINT** | Tails OS · Tor Network · Proxy Rotation (`stem`, `requests`) | 🔄 In Progress |
 | **Linux & Python Automation** | Custom Scanners · Shell Scripting · Recon Tools | ✅ Active |
 | **AI Ops & Security** | Integrating Python automation with threat intelligence | 🔄 In Progress |
+| **Cloud & Infrastructure** | Linux Environments · Network Configuration · OPSEC Nodes | 🔄 In Progress |
