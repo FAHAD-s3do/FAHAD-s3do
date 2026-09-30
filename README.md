@@ -5,7 +5,6 @@
 <br><br>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/fahad-a-845013279)
-[![Email](https://img.shields.io/badge/Email-Contact-red?style=flat&logo=gmail)](mailto:fahadadeel36@gmail.com)
 [![Profile Views](https://komarev.com/ghpvc/?username=FAHAD-s3do&color=blue)](https://github.com/FAHAD-s3do)
 
 </div>
