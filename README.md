@@ -23,6 +23,20 @@ I have completed cybersecurity coursework and am continuing my studies in DevOps
 
 ## Technical stack & learning areas
 
+**Cloud & containers**
+
+<img src="https://skillicons.dev/icons?i=aws,docker,nginx,kubernetes&amp;perline=4" alt="AWS, Docker, Nginx and Kubernetes" />
+
+**Security systems & observability**
+
+<img src="https://skillicons.dev/icons?i=linux,windows,kali,elasticsearch,grafana,prometheus&amp;perline=6" alt="Linux, Windows, Kali Linux, Elasticsearch, Grafana and Prometheus" />
+
+**Automation & infrastructure**
+
+<img src="https://skillicons.dev/icons?i=python,bash,git,github,terraform,ansible&amp;perline=6" alt="Python, Bash, Git, GitHub, Terraform and Ansible" />
+
+*Tools represented across projects and ongoing learning; the context for each area is listed below.*
+
 | Domain | Technologies and topics | Context |
 |---|---|---|
 | Cloud & containers | AWS, Docker, Nginx, ECR, ECS Fargate, IAM | Public deployment project |
