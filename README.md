@@ -35,6 +35,18 @@ I have completed cybersecurity coursework and am continuing my studies in DevOps
 
 <img src="https://skillicons.dev/icons?i=python,bash,git,github,terraform,ansible&amp;perline=6" alt="Python, Bash, Git, GitHub, Terraform and Ansible" />
 
+**Security testing & AI security**
+
+![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
+![OWASP](https://img.shields.io/badge/OWASP_Top_10-000000?style=flat-square&logo=owasp&logoColor=white)
+![OWASP LLM Security](https://img.shields.io/badge/OWASP_LLM_Security-4338CA?style=flat-square&logo=owasp&logoColor=white)
+
+**Elastic Stack**
+
+![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
+![Logstash](https://img.shields.io/badge/Logstash-005571?style=flat-square&logo=logstash&logoColor=white)
+![Kibana](https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white)
+
 *Tools represented across projects and ongoing learning; the context for each area is listed below.*
 
 | Domain | Technologies and topics | Context |
