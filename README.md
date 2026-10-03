@@ -1,80 +1,84 @@
-<div align="center">
+# Hi, I'm Fahad
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=20&duration=3500&pause=1000&color=3399FF&center=true&vCenter=true&width=500&lines=Hi+there,+I'm+Fahad+👋;AI+|+Cyber+Security;Offensive+Security+&+Red+Teaming;Cloud+Infrastructure" alt="Typing SVG" />
+**Cybersecurity · Offensive & Defensive Security · AI Security · DevSecOps**
 
-<br><br>
+I focus on offensive and defensive security, AI security, and DevSecOps. My work combines hands-on security labs with cloud deployment projects to understand how systems fail, how defenders detect those failures, and how engineering can prevent them.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/fahad-a-845013279)
-[![Profile Views](https://komarev.com/ghpvc/?username=FAHAD-s3do&color=blue)](https://github.com/FAHAD-s3do)
+I have completed cybersecurity coursework and am continuing my studies in DevOps, cloud infrastructure, and artificial intelligence. My direction spans red teaming and blue teaming, supported by Linux, networking, Python, and cloud automation.
 
-</div>
+[LinkedIn](https://www.linkedin.com/in/fahad-a-845013279) · [Featured project](https://github.com/FAHAD-s3do/docker-ecr-deployment)
 
----
+## Security focus
 
-### 🔗 About Me
+| Area | Learning and project focus |
+|---|---|
+| Offensive security & red teaming | Web and network security testing, vulnerability analysis, Windows internals, and exploit fundamentals in isolated labs |
+| Defensive security & blue teaming | Log analysis, detection engineering, incident investigation, and system hardening |
+| SIEM & security analytics | ELK / Elastic Stack (Elasticsearch, Logstash, Kibana), centralized logs, event correlation, and threat-hunting workflows |
+| Cloud security | AWS IAM, least-privilege access, network segmentation, cloud audit logs, secrets management, and misconfiguration review |
+| Monitoring & observability | Grafana dashboards, Prometheus metrics, alerting, and using operational telemetry to support security investigations |
+| Container & Kubernetes security | Image vulnerability assessment, workload permissions, secrets handling, and network policies |
+| AI security & AI red teaming | Prompt injection, sensitive-data exposure, model and agent evaluations, and security boundaries in AI applications |
+| DevOps & DevSecOps | Container delivery, cloud permissions, CI/CD security, and repeatable infrastructure workflows |
 
-I am a **Cloud Security and Infrastructure Architect** specializing in **DevSecOps, Enterprise Cloud Infrastructure, Automated Threat Intelligence, and Artificial Intelligence Operations**. I focus on building resilient, scalable, and production-ready enterprise environments rather than isolated scripts.
+## Technical stack & learning areas
 
-Currently advancing through comprehensive RQF Level 6 professional pathways spanning **Cloud Cyber Security, DevOps & Cloud Infrastructure, and Artificial Intelligence**, encompassing over 320+ hours of advanced modules including RHEL Enterprise Administration, Kubernetes Cluster Architecture, AWS Cloud Environments, Elastic Stack SIEM Operations, and Machine Learning Model Deployment.
+| Domain | Technologies and topics | Context |
+|---|---|---|
+| Cloud & containers | AWS, Docker, Nginx, ECR, ECS Fargate, IAM | Public deployment project |
+| CI/CD & automation | CodeBuild, CodePipeline, Git, Python, Bash | Project configuration and ongoing practice |
+| Systems & networking | Linux, Windows, TCP/IP, DNS, HTTP, virtual machines | Cybersecurity foundations and lab practice |
+| Offensive security | Kali Linux, Nmap, Netcat, Metasploit concepts, Immunity Debugger, memory safety | Current learning and isolated lab work |
+| Defensive security | Log analysis, SIEM concepts, incident investigation, detection engineering, hardening | Security focus and continued development |
+| SIEM & observability | Elasticsearch, Logstash, Kibana, Grafana, Prometheus | Learning and project focus |
+| Cloud security | AWS IAM, CloudTrail, CloudWatch, VPC security, secrets management | Development focus; existing AWS project linked below |
+| Infrastructure & orchestration | Kubernetes, Terraform, Ansible | Ongoing learning |
+| AI & AI security | Machine learning foundations, LLM application security, prompt injection, model/agent evaluation | Ongoing study and planned evaluations |
 
-My core philosophy centers on engineering secure-by-design architectures, automating defensive operations, and orchestrating cloud-native pipelines that enterprises can reliably deploy, monitor, and defend.
+## Learning background
 
----
+- **Completed:** cybersecurity coursework.
+- **In progress:** DevOps, cloud infrastructure, and artificial intelligence coursework.
+- **Applied practice:** security labs, cloud deployment configuration, and technical troubleshooting.
 
-### 🔗 What I Build
+## Featured project
 
-* **Enterprise Cloud & Kubernetes Architectures** — Designing and deploying production-grade container orchestration clusters via Kubernetes Administration, AWS Cloud Native infrastructure, and automated infrastructure-as-code pipelines.
-* **DevSecOps & SIEM Security Operations** — Implementing centralized log analytics, threat hunting frameworks, and vulnerability assessment protocols using enterprise-grade Elastic Stack and automated security hardening workflows.
-* **AI & Machine Learning Engineering** — Developing neural network pipelines, computer vision models, and natural language processing architectures integrated seamlessly within automated backend systems.
-* **Advanced Systems & Infrastructure Automation** — Orchestrating large-scale enterprise server administration, secure network configurations, and comprehensive compliance auditing frameworks (ISO, PCI-DSS, NIST).
+### [Container deployment pipeline on AWS](https://github.com/FAHAD-s3do/docker-ecr-deployment)
 
----
+A Docker/Nginx project with AWS deployment configuration and documented troubleshooting across ECR, ECS Fargate, CodeBuild, and CodePipeline.
 
-### 🔗 Tech Stack & Ecosystems
+**Explore the implementation:**
 
-<div align="center">
+- [Docker image](https://github.com/FAHAD-s3do/docker-ecr-deployment/blob/main/Dockerfile) — container packaging for a static Nginx application.
+- [Build configuration](https://github.com/FAHAD-s3do/docker-ecr-deployment/blob/main/buildspec.yml) — image build, ECR publishing, and deployment artifact generation.
+- [ECS configuration](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main/ecs-fargate-deployment) — task-definition template and local configuration renderer.
+- [Troubleshooting notes](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main/codepipeline-cd) — build-context errors, permissions, and container-name mismatches.
 
-**Cloud Computing & Enterprise Infrastructure**
-<br>
-<img src="https://skillicons.dev/icons?i=aws,gcp,azure,docker,kubernetes,terraform,vagrant" />
-<br>
-![AWS Cloud](https://img.shields.io/badge/AWS-Architecture-FF9900?style=flat&logo=amazonaws&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=flat&logo=kubernetes&logoColor=white) ![Red Hat Linux](https://img.shields.io/badge/RHEL-Enterprise-EE0000?style=flat&logo=redhat&logoColor=white) ![Terraform](https://img.shields.io/badge/Terraform-IaC-844FBA?style=flat&logo=terraform&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-Containers-2496ED?style=flat&logo=docker&logoColor=white) ![OpenStack](https://img.shields.io/badge/OpenStack-Cloud-RED?style=flat&logo=openstack&logoColor=white)
+**Tools represented:** Docker, Nginx, AWS ECR, ECS Fargate, CodeBuild, CodePipeline, IAM, Python, and Git.
 
-<br>
+## Security topics studied & ongoing practice
 
-**DevSecOps, SIEM & Security Operations**
-<br>
-<img src="https://skillicons.dev/icons?i=ansible,jenkins,gitlab,grafana,nagios" />
-<br>
-![Elastic Stack](https://img.shields.io/badge/Elastic_Stack-SIEM-005571?style=flat&logo=elastic&logoColor=white) ![Wazuh](https://img.shields.io/badge/Wazuh-SOC_Monitoring-00bfff?style=flat) ![Ansible](https://img.shields.io/badge/Ansible-Automation-EE0000?style=flat&logo=ansible&logoColor=white) ![CI/CD](https://img.shields.io/badge/CI%2FCD-Pipelines-20232A?style=flat&logo=appveyor&logoColor=white) ![Vulnerability Assessment](https://img.shields.io/badge/VAPT-Security-darkred?style=flat) ![ISO Standards](https://img.shields.io/badge/ISO_27001-Compliance-blue?style=flat)
+- **Web application security:** OWASP Top 10, vulnerability analysis, root causes, impact, and remediation.
+- **AI & LLM security:** OWASP Top 10 for LLM Applications, prompt injection, sensitive-information disclosure, unsafe output handling, and excessive agency.
+- **Network security & pivoting:** host discovery, service enumeration, routing, tunneling concepts, and access paths across segmented lab networks.
+- **Linux & Windows privilege escalation:** permissions, security boundaries, misconfigurations, and local escalation concepts.
+- **Linux & Windows kernel exploitation:** study of kernel vulnerabilities, user-mode versus kernel-mode boundaries, exploitation concepts, and mitigations.
+- **Memory safety & binary analysis:** buffer overflows, stack behavior, crash analysis, registers, and debugger fundamentals.
+- **Defensive analysis:** connecting vulnerability behavior to logs, detection opportunities, hardening, and remediation validation.
+- **Security automation:** Python and shell scripting for repeatable testing, evidence collection, and analysis.
 
-<br>
+This section describes topics I have studied and areas of continued practice. Completed implementations and validated results are documented in the linked projects.
 
-**Artificial Intelligence & Data Engineering**
-<br>
-<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,scikitlearn" />
-<br>
-![Deep Learning](https://img.shields.io/badge/Deep_Learning-Neural_Networks-FF6F00?style=flat&logo=tensorflow&logoColor=white) ![Computer Vision](https://img.shields.io/badge/Computer_Vision-CV-4B0082?style=flat) ![NLP](https://img.shields.io/badge/NLP-Text_Analytics-008080?style=flat) ![Data Pipelines](https://img.shields.io/badge/Data_Pipelines-ETL-F7931E?style=flat)
+## Next portfolio projects
 
-<br>
+- **Red + blue lab:** pair a controlled security test with observable logs, a detection, and remediation.
+- **AI security evaluation:** create synthetic prompt-injection test cases and document expected versus observed behavior.
+- **DevSecOps pipeline:** extend the container project with dependency/image checks, scoped permissions, and verification evidence.
 
-**Systems Engineering & Scripting Frameworks**
-<br>
-<img src="https://skillicons.dev/icons?i=py,bash,linux,git,github,vscode" />
-<br>
-![Python Automation](https://img.shields.io/badge/Python-Automation-3776AB?style=flat&logo=python&logoColor=white) ![Bash Scripting](https://img.shields.io/badge/Bash-Shell_Scripting-4EAA25?style=flat&logo=gnubash&logoColor=white) ![SCADA/ICS](https://img.shields.io/badge/SCADA_ICS-Security-gray?style=flat)
+These projects are planned; completed work will be linked here as it is published.
 
-</div>
+## How I document my work
 
----
+My goal for each project is a clear problem statement, reproducible setup, evidence of results, troubleshooting notes, and practical improvements.
 
-### 🔗 Currently Building
-
-| Domain | Path | Status |
-| :--- | :--- | :--- |
-| 🛜 **Kubernetes** | KCNA → KCSA → CKA → CKAD → CKS | 🔄 In Progress |
-| 🛡️ **Cybersecurity** | VAPT · SIEM · OSINT · Offensive Security Frameworks | 🔄 In Progress |
-| 📊 **Data Engineering** | Spark · ClickHouse · ETL/ELT · NoSQL · AI/ML Integration | 🔄 In Progress |
-| ⚙️ **DevOps Toolchain** | ArgoCD · Vault · Helm · Tekton · Drone CI · OpenTelemetry | 🔄 In Progress |
-| ☁️ **Red Hat Advanced** | OpenShift Admin II & III · OpenStack · Virtualization | 🔄 In Progress |
-| 🤖 **Artificial Intelligence** | LLM Fine-tuning · RAG · Deep Learning Pipelines | 🔄 In Progress |
+Security testing is limited to my own lab environments and explicitly authorized systems.
