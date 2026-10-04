@@ -46,9 +46,32 @@ I have completed cybersecurity coursework and am continuing my studies in DevOps
 
 **Security testing & AI security**
 
+*Tools and frameworks for continued learning and lab exploration; demonstrated work is documented in the linked projects.*
+
+Offensive security
+
 ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
-![OWASP](https://img.shields.io/badge/OWASP_Top_10-000000?style=flat-square&logo=owasp&logoColor=white)
-![OWASP LLM Security](https://img.shields.io/badge/OWASP_LLM_Security-4338CA?style=flat-square&logo=owasp&logoColor=white)
+![Burp Suite](https://img.shields.io/badge/Burp%20Suite-FF6633?style=flat-square&logo=burpsuite&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-214478?style=flat-square)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
+![OWASP ZAP](https://img.shields.io/badge/OWASP%20ZAP-00549E?style=flat-square)
+![Nuclei](https://img.shields.io/badge/Nuclei-3B82F6?style=flat-square)
+![Ghidra](https://img.shields.io/badge/Ghidra-A31F34?style=flat-square)
+![Impacket](https://img.shields.io/badge/Impacket-334155?style=flat-square)
+
+AI security & red teaming
+
+![garak](https://img.shields.io/badge/garak-6D28D9?style=flat-square)
+![PyRIT](https://img.shields.io/badge/PyRIT-4338CA?style=flat-square)
+![promptfoo](https://img.shields.io/badge/promptfoo-2563EB?style=flat-square)
+![MITRE ATLAS](https://img.shields.io/badge/MITRE%20ATLAS-7C3AED?style=flat-square)
+![Hugging Face](https://img.shields.io/badge/Hugging%20Face-6B5200?style=flat-square&logo=huggingface&logoColor=white)
+
+Security frameworks
+
+![OWASP Top 10](https://img.shields.io/badge/OWASP%20Top%2010-000000?style=flat-square&logo=owasp&logoColor=white)
+![OWASP LLM Top 10](https://img.shields.io/badge/OWASP%20LLM%20Top%2010-4338CA?style=flat-square&logo=owasp&logoColor=white)
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-B91C1C?style=flat-square)
 
 **Elastic Stack**
 
