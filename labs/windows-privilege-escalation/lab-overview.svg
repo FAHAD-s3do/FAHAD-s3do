@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img" aria-labelledby="title desc">
+<title id="title">Windows privilege escalation — reconstructed lab notes</title><desc id="desc">Illustrative animation of a recalled getsystem attempt and a reported SYSTEM identity. Not a recorded terminal session.</desc>
+<style>.pulse{animation:pulse 5s ease-in-out infinite}@keyframes pulse{0%,100%{opacity:.3}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.pulse{animation:none}}</style>
+<rect width="1000" height="250" rx="16" fill="#080f1d"/><path d="M25 46H975" stroke="#29425f"/>
+<g font-family="monospace"><text x="28" y="30" fill="#7dd3fc" font-size="15">WINDOWS / PRIVILEGE ESCALATION</text>
+<text x="28" y="91" fill="#e2edff" font-size="23">meterpreter &gt; getsystem</text>
+<rect class="pulse" x="28" y="111" width="5" height="45" fill="#a78bfa"/>
+<text x="48" y="139" fill="#c4b5fd" font-size="22">Reported identity: NT AUTHORITY\SYSTEM</text>
+<text x="28" y="194" fill="#91abc6" font-size="16">Reconstructed notes / original evidence unavailable</text>
+<text x="28" y="224" fill="#7895b7" font-size="13">Illustration only — not a captured execution or live terminal.</text></g></svg>
