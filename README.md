@@ -131,3 +131,7 @@ These projects are planned; completed work will be linked here as it is publishe
 My goal for each project is a clear problem statement, reproducible setup, evidence of results, troubleshooting notes, and practical improvements.
 
 Security testing is limited to my own lab environments and explicitly authorized systems.
+
+## Contribution activity
+
+![Blue snake animation of my GitHub contributions](assets/contribution-snake.svg)
