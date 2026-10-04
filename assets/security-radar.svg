@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="240" viewBox="0 0 1000 240" role="img" aria-labelledby="title desc">
+<title id="title">Security radar — explore, observe, improve</title><desc id="desc">Decorative animated radar representing offensive, defensive and AI security learning. Not live monitoring data.</desc>
+<style>.scan{transform-origin:140px 120px;animation:sweep 10s linear infinite}@keyframes sweep{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.scan{animation:none}}</style>
+<rect x="1" y="1" width="998" height="238" rx="16" fill="#080f1d" stroke="#223a56" stroke-width="2"/>
+<g fill="none" stroke="#254766"><circle cx="140" cy="120" r="88"/><circle cx="140" cy="120" r="60"/><circle cx="140" cy="120" r="30"/><path d="M52 120H228M140 32V208"/></g>
+<g class="scan"><path d="M140 120L140 32A88 88 0 0 1 202 58Z" fill="#38bdf8" opacity=".12"/><path d="M140 120V32" stroke="#38bdf8" stroke-width="2"/></g>
+<g fill="#7dd3fc"><circle cx="107" cy="77" r="4"/><circle cx="185" cy="142" r="4"/><circle cx="124" cy="167" r="3"/></g>
+<g font-family="Arial,sans-serif"><text x="290" y="69" fill="#7dd3fc" font-size="13" letter-spacing="3">SECURITY MINDSET</text><text x="290" y="110" fill="#e2edff" font-size="29" font-weight="bold">Explore. Observe. Improve.</text><text x="290" y="150" fill="#a6bdd7" font-size="18">Offensive testing / Defensive analysis / AI security</text><text x="290" y="185" fill="#7895b7" font-size="14">A visual theme for continuous learning — not live telemetry.</text></g></svg>
