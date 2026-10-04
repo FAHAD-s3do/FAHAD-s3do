@@ -10,6 +10,8 @@ I have completed cybersecurity coursework and am continuing my studies in DevOps
 
 [LinkedIn](https://www.linkedin.com/in/fahad-a-845013279) · [Featured project](https://github.com/FAHAD-s3do/docker-ecr-deployment)
 
+![Animated terminal showing my security focus](assets/security-terminal.svg)
+
 ## Security focus
 
 | Area | Learning and project focus |
@@ -22,6 +24,8 @@ I have completed cybersecurity coursework and am continuing my studies in DevOps
 | Container & Kubernetes security | Image vulnerability assessment, workload permissions, secrets handling, and network policies |
 | AI security & AI red teaming | Prompt injection, sensitive-data exposure, model and agent evaluations, and security boundaries in AI applications |
 | DevOps & DevSecOps | Container delivery, cloud permissions, CI/CD security, and repeatable infrastructure workflows |
+
+<img src="assets/circuit-divider.svg" alt="" width="1000" />
 
 ## Technical stack & learning areas
 
@@ -82,6 +86,8 @@ I have completed cybersecurity coursework and am continuing my studies in DevOps
 - **In progress:** DevOps, cloud infrastructure, and artificial intelligence coursework.
 - **Applied practice:** security labs, cloud deployment configuration, and technical troubleshooting.
 
+<img src="assets/circuit-divider.svg" alt="" width="1000" />
+
 ## Featured project
 
 ### [Container deployment pipeline on AWS](https://github.com/FAHAD-s3do/docker-ecr-deployment)
@@ -96,6 +102,8 @@ A Docker/Nginx project with AWS deployment configuration and documented troubles
 - [Troubleshooting notes](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main/codepipeline-cd) — build-context errors, permissions, and container-name mismatches.
 
 **Tools represented:** Docker, Nginx, AWS ECR, ECS Fargate, CodeBuild, CodePipeline, IAM, Python, and Git.
+
+![Security radar: explore, observe, improve](assets/security-radar.svg)
 
 ## Security topics studied & ongoing practice
 
