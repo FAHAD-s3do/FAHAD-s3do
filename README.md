@@ -73,6 +73,27 @@ Security frameworks
 ![OWASP LLM Top 10](https://img.shields.io/badge/OWASP%20LLM%20Top%2010-4338CA?style=flat-square&logo=owasp&logoColor=white)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-B91C1C?style=flat-square)
 
+**Blue Team / DFIR — Learning roadmap**
+
+![Wazuh](https://img.shields.io/badge/Wazuh-175B8C?style=flat-square)
+![Splunk](https://img.shields.io/badge/Splunk-175B8C?style=flat-square)
+![Sysmon](https://img.shields.io/badge/Sysmon-175B8C?style=flat-square)
+![Sigma](https://img.shields.io/badge/Sigma-175B8C?style=flat-square)
+![YARA](https://img.shields.io/badge/YARA-175B8C?style=flat-square)
+![Suricata](https://img.shields.io/badge/Suricata-175B8C?style=flat-square)
+![Zeek](https://img.shields.io/badge/Zeek-175B8C?style=flat-square)
+![Volatility](https://img.shields.io/badge/Volatility-175B8C?style=flat-square)
+
+**DevSecOps — Learning roadmap**
+
+![Trivy](https://img.shields.io/badge/Trivy-305B45?style=flat-square)
+![Semgrep](https://img.shields.io/badge/Semgrep-305B45?style=flat-square)
+![Checkov](https://img.shields.io/badge/Checkov-305B45?style=flat-square)
+![Gitleaks](https://img.shields.io/badge/Gitleaks-305B45?style=flat-square)
+![OWASP Dependency-Check](https://img.shields.io/badge/OWASP%20Dependency--Check-305B45?style=flat-square)
+
+*Planned tools for future labs and projects; these badges do not indicate completed implementations.*
+
 **Elastic Stack**
 
 ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
