@@ -1,4 +1,4 @@
-![Fahad — Cybersecurity, AI Security and DevSecOps](assets/fahad-banner.svg)
+![FERO — Cybersecurity, AI Security and DevSecOps](assets/fahad-banner.svg)
 
 # Hi, I'm Fahad
 
