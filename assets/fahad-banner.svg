@@ -10,7 +10,7 @@
 <g fill="none" stroke="#365778" opacity=".3"><circle cx="1115" cy="150" r="115"/><circle cx="1115" cy="150" r="83"/><path d="M930 0v300M990 0v300M1050 0v300M1110 0v300M1170 0v300M900 60h300M900 120h300M900 180h300M900 240h300"/></g>
 <rect x="40" y="50" width="4" height="200" rx="2" fill="url(#line)"/>
 <text x="80" y="66" fill="#7dd3fc" font-family="monospace" font-size="15" letter-spacing="4">SECURITY / ENGINEERING / AUTOMATION</text>
-<text x="76" y="164" fill="#eff6ff" font-family="monospace" font-size="86" font-weight="bold" letter-spacing="12" clip-path="url(#reveal)">FAHAD</text>
+<text x="76" y="164" fill="#000000" font-family="monospace" font-size="86" font-weight="bold" letter-spacing="12" clip-path="url(#reveal)">FAHAD</text>
 <rect x="405" y="99" width="5" height="68" fill="#38bdf8"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
 <text x="80" y="218" fill="#b9cce2" font-family="Arial, sans-serif" font-size="22">Cybersecurity · AI Security · DevSecOps</text>
 <text x="80" y="253" fill="#7298bd" font-family="Arial, sans-serif" font-size="16" letter-spacing="2">OFFENSIVE &amp; DEFENSIVE SECURITY</text>
