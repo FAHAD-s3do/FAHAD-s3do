@@ -1,5 +1,7 @@
 # Security and Applied AI Lab Records
 
+![Animated security and AI topics; retrospective records with evidence pending](lab-collection.svg)
+
 Selected past lab activity, organized for later reconstruction and evidence collection.
 
 **Evidence status:** the author reports performing these labs. The supplied session history establishes environment activity, not independently verified task completion. These are retrospective records, not finished implementation repositories. Titles ending in `...` were truncated in the source.
