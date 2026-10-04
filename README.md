@@ -13,7 +13,7 @@ I have completed cybersecurity coursework and am continuing my studies in DevOps
 
 ![Animated terminal showing my security focus](assets/security-terminal.svg)
 
-## Security focus
+## `~/security` — Security focus
 
 ![Red and Blue Team signals converge into Purple Team collaboration](assets/purple-team.svg)
 
@@ -30,7 +30,7 @@ I have completed cybersecurity coursework and am continuing my studies in DevOps
 
 <img src="assets/circuit-divider.svg" alt="" width="1000" />
 
-## Technical stack & learning areas
+## `~/toolkit` — Technical stack & learning areas
 
 **Cloud & containers**
 
@@ -48,7 +48,7 @@ I have completed cybersecurity coursework and am continuing my studies in DevOps
 
 *Tools and frameworks for continued learning and lab exploration; demonstrated work is documented in the linked projects.*
 
-Offensive security
+**`~/offensive` — Offensive security**
 
 ![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
 ![Burp Suite](https://img.shields.io/badge/Burp%20Suite-FF6633?style=flat-square&logo=burpsuite&logoColor=white)
@@ -59,7 +59,7 @@ Offensive security
 ![Ghidra](https://img.shields.io/badge/Ghidra-A31F34?style=flat-square)
 ![Impacket](https://img.shields.io/badge/Impacket-334155?style=flat-square)
 
-AI security & red teaming
+**`~/ai-security` — AI security & red teaming**
 
 ![garak](https://img.shields.io/badge/garak-6D28D9?style=flat-square)
 ![PyRIT](https://img.shields.io/badge/PyRIT-4338CA?style=flat-square)
@@ -73,7 +73,7 @@ Security frameworks
 ![OWASP LLM Top 10](https://img.shields.io/badge/OWASP%20LLM%20Top%2010-4338CA?style=flat-square&logo=owasp&logoColor=white)
 ![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-B91C1C?style=flat-square)
 
-**Blue Team / DFIR — Learning roadmap**
+**`~/defensive` — Blue Team / DFIR · Learning roadmap**
 
 ![Wazuh](https://img.shields.io/badge/Wazuh-175B8C?style=flat-square)
 ![Splunk](https://img.shields.io/badge/Splunk-175B8C?style=flat-square)
@@ -127,7 +127,7 @@ Security frameworks
 | Infrastructure & orchestration | Kubernetes, Terraform, Ansible | Ongoing learning |
 | AI & AI security | Machine learning foundations, LLM application security, prompt injection, model/agent evaluation | Ongoing study and planned evaluations |
 
-## Learning background
+## `~/learning` — Learning background
 
 - **Completed:** cybersecurity coursework.
 - **In progress:** DevOps, cloud infrastructure, and artificial intelligence coursework.
@@ -135,7 +135,7 @@ Security frameworks
 
 <img src="assets/circuit-divider.svg" alt="" width="1000" />
 
-## Featured project
+## `~/projects` — Featured project
 
 ### [Container deployment pipeline on AWS](https://github.com/FAHAD-s3do/docker-ecr-deployment)
 
@@ -152,7 +152,7 @@ A Docker/Nginx project with AWS deployment configuration and documented troubles
 
 ![Security radar: explore, observe, improve](assets/security-radar.svg)
 
-## Security topics studied & ongoing practice
+## `~/labs` — Security topics studied & ongoing practice
 
 - **Web application security:** OWASP Top 10, vulnerability analysis, root causes, impact, and remediation.
 - **AI & LLM security:** OWASP Top 10 for LLM Applications, prompt injection, sensitive-information disclosure, unsafe output handling, and excessive agency.
@@ -165,7 +165,7 @@ A Docker/Nginx project with AWS deployment configuration and documented troubles
 
 This section describes topics I have studied and areas of continued practice. Completed implementations and validated results are documented in the linked projects.
 
-## Next portfolio projects
+## `~/roadmap` — Next portfolio projects
 
 - **Red + blue lab:** pair a controlled security test with observable logs, a detection, and remediation.
 - **AI security evaluation:** create synthetic prompt-injection test cases and document expected versus observed behavior.
@@ -173,12 +173,12 @@ This section describes topics I have studied and areas of continued practice. Co
 
 These projects are planned; completed work will be linked here as it is published.
 
-## How I document my work
+## `~/notes` — How I document my work
 
 My goal for each project is a clear problem statement, reproducible setup, evidence of results, troubleshooting notes, and practical improvements.
 
 Security testing is limited to my own lab environments and explicitly authorized systems.
 
-## Contribution activity
+## `~/activity` — Contribution activity
 
 ![Blue snake animation of my GitHub contributions](assets/contribution-snake.svg)
