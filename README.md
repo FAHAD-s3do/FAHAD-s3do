@@ -47,6 +47,19 @@ I have completed cybersecurity coursework and am continuing my studies in DevOps
 ![Logstash](https://img.shields.io/badge/Logstash-005571?style=flat-square&logo=logstash&logoColor=white)
 ![Kibana](https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white)
 
+**AWS delivery & cloud security**
+
+![Amazon ECR](https://img.shields.io/badge/Amazon_ECR-Container_Registry-FF9900?style=flat-square)
+![Amazon ECS](https://img.shields.io/badge/Amazon_ECS-Fargate-FF9900?style=flat-square)
+![AWS CodeBuild](https://img.shields.io/badge/AWS-CodeBuild-2E7D32?style=flat-square)
+![AWS CodePipeline](https://img.shields.io/badge/AWS-CodePipeline-2E7D32?style=flat-square)
+![AWS IAM](https://img.shields.io/badge/AWS-IAM-DD344C?style=flat-square)
+![Amazon CloudWatch](https://img.shields.io/badge/Amazon-CloudWatch-8C4FFF?style=flat-square)
+
+**Memory safety & programming foundations**
+
+<img src="https://skillicons.dev/icons?i=c,cpp&amp;perline=2" alt="C and C++ — memory-safety learning foundations" />
+
 *Tools represented across projects and ongoing learning; the context for each area is listed below.*
 
 | Domain | Technologies and topics | Context |
