@@ -154,6 +154,8 @@ A Docker/Nginx project with AWS deployment configuration and documented troubles
 
 ## Reconstructed lab notes
 
+[Browse selected security and applied AI lab records](labs/README.md) — six additional past activities, with implementation evidence pending.
+
 ### [Windows privilege escalation with Meterpreter](labs/windows-privilege-escalation/README.md)
 
 A retrospective write-up of a Windows lab using `getsystem`, with an author-reported SYSTEM identity. Includes an animated overview, evidence limitations and a checklist for a documented repeat. Original logs and screenshots are unavailable.
