@@ -152,6 +152,12 @@ A Docker/Nginx project with AWS deployment configuration and documented troubles
 
 ![Security radar: explore, observe, improve](assets/security-radar.svg)
 
+## Reconstructed lab notes
+
+### [Windows privilege escalation with Meterpreter](labs/windows-privilege-escalation/README.md)
+
+A retrospective write-up of a Windows lab using `getsystem`, with an author-reported SYSTEM identity. Includes an animated overview, evidence limitations and a checklist for a documented repeat. Original logs and screenshots are unavailable.
+
 ## `~/labs` — Security topics studied & ongoing practice
 
 - **Web application security:** OWASP Top 10, vulnerability analysis, root causes, impact, and remediation.
