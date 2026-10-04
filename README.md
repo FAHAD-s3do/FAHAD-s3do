@@ -8,7 +8,8 @@ I focus on offensive and defensive security, AI security, and DevSecOps. My work
 
 I have completed cybersecurity coursework and am continuing my studies in DevOps, cloud infrastructure, and artificial intelligence. My direction spans red teaming and blue teaming, supported by Linux, networking, Python, and cloud automation.
 
-[LinkedIn](https://www.linkedin.com/in/fahad-a-845013279) · [Featured project](https://github.com/FAHAD-s3do/docker-ecr-deployment)
+<a href="https://www.linkedin.com/in/fahad-a-845013279"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iMiIgZmlsbD0id2hpdGUiLz48dGV4dCB4PSIzIiB5PSIxOSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE5IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzBBNjZDMiI%2BaW48L3RleHQ%2BPC9zdmc%2B" alt="Connect on LinkedIn" /></a>
+<a href="https://github.com/FAHAD-s3do/docker-ecr-deployment"><img src="https://img.shields.io/badge/Featured_Project-102747?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="View featured project on GitHub" /></a>
 
 ![Animated terminal showing my security focus](assets/security-terminal.svg)
 
