@@ -14,6 +14,8 @@ I have completed cybersecurity coursework and am continuing my studies in DevOps
 
 ## Security focus
 
+![Red and Blue Team signals converge into Purple Team collaboration](assets/purple-team.svg)
+
 | Area | Learning and project focus |
 |---|---|
 | Offensive security & red teaming | Web and network security testing, vulnerability analysis, Windows internals, and exploit fundamentals in isolated labs |
