@@ -1,17 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="title desc">
-<title id="title">Fahad — Cybersecurity, AI Security and DevSecOps</title>
-<desc id="desc">Dark navy profile banner with an animated name reveal and blue cursor.</desc>
-<defs>
-<linearGradient id="bg" x2="1" y2="1"><stop stop-color="#050912"/><stop offset="1" stop-color="#102747"/></linearGradient>
-<linearGradient id="line"><stop stop-color="#2563eb"/><stop offset="1" stop-color="#67e8f9"/></linearGradient>
-<clipPath id="reveal"><rect x="80" y="88" width="500" height="100"><animate attributeName="width" values="0;500;500;0;0" keyTimes="0;0.3;0.85;0.95;1" dur="7s" repeatCount="indefinite"/></rect></clipPath>
-</defs>
-<rect width="1200" height="300" rx="20" fill="url(#bg)"/>
-<g fill="none" stroke="#365778" opacity=".3"><circle cx="1115" cy="150" r="115"/><circle cx="1115" cy="150" r="83"/><path d="M930 0v300M990 0v300M1050 0v300M1110 0v300M1170 0v300M900 60h300M900 120h300M900 180h300M900 240h300"/></g>
-<rect x="40" y="50" width="4" height="200" rx="2" fill="url(#line)"/>
-<text x="80" y="66" fill="#7dd3fc" font-family="monospace" font-size="15" letter-spacing="4">SECURITY / ENGINEERING / AUTOMATION</text>
-<text x="76" y="164" fill="#000000" font-family="monospace" font-size="86" font-weight="bold" letter-spacing="12" clip-path="url(#reveal)">FAHAD</text>
-<rect x="405" y="99" width="5" height="68" fill="#38bdf8"><animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/></rect>
-<text x="80" y="218" fill="#b9cce2" font-family="Arial, sans-serif" font-size="22">Cybersecurity · AI Security · DevSecOps</text>
-<text x="80" y="253" fill="#7298bd" font-family="Arial, sans-serif" font-size="16" letter-spacing="2">OFFENSIVE &amp; DEFENSIVE SECURITY</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+<title id="title">Fahad — security lab</title><desc id="desc">Terminal-style banner with black name text on a cyan panel, dark navy background and a subtle moving scan line. Break assumptions. Build defenses.</desc>
+<style>.scan{animation:scan 9s linear infinite}.cursor{animation:blink 1.2s steps(2,end) infinite}@keyframes scan{from{transform:translateY(0)}to{transform:translateY(266px)}}@keyframes blink{50%{opacity:0}}@media(prefers-reduced-motion:reduce){.scan,.cursor{animation:none}.scan{opacity:0}}</style>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#050912"/><stop offset="1" stop-color="#102747"/></linearGradient><clipPath id="frame"><rect width="1200" height="320" rx="18"/></clipPath></defs>
+<g clip-path="url(#frame)">
+<rect width="1200" height="320" fill="url(#bg)"/>
+<path d="M0 42H1200" stroke="#284562"/><circle cx="26" cy="22" r="5" fill="#fb7185"/><circle cx="46" cy="22" r="5" fill="#a78bfa"/><circle cx="66" cy="22" r="5" fill="#38bdf8"/>
+<text x="600" y="27" text-anchor="middle" font-family="monospace" font-size="13" fill="#91abc6">~/security-lab</text>
+<g stroke="#224363" opacity=".4"><path d="M900 70V290M960 70V290M1020 70V290M1080 70V290M1140 70V290M870 100H1170M870 160H1170M870 220H1170M870 280H1170"/></g>
+<g font-family="monospace">
+<text x="48" y="88" font-size="22" fill="#67e8f9">fero@security-lab:~$ <tspan fill="#dbeafe">whoami</tspan></text>
+<rect x="48" y="111" width="354" height="85" rx="8" fill="#a5e5f5"/>
+<text x="65" y="176" font-size="67" letter-spacing="8" font-weight="bold" fill="#000000">FAHAD</text>
+<rect class="cursor" x="419" y="131" width="12" height="54" fill="#38bdf8"/>
+<text x="48" y="236" fill="#c1d5ea" font-size="22">Cybersecurity / AI Security / DevSecOps</text>
+<text x="48" y="281" fill="#7dd3fc" font-size="18">Break assumptions. Build defenses.</text>
+<text x="878" y="113" fill="#fb7185" font-size="16">~/offensive</text>
+<text x="878" y="173" fill="#38bdf8" font-size="16">~/defensive</text>
+<text x="878" y="233" fill="#c084fc" font-size="16">~/ai-security</text>
+</g>
+<rect class="scan" x="0" y="44" width="1200" height="2" fill="#67e8f9" opacity=".12"/>
+</g></svg>
