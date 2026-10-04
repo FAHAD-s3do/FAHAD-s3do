@@ -10,9 +10,7 @@ Study Windows session identity and an attempt to obtain local SYSTEM privileges 
 
 ## Tools used
 
-- Windows target — version, build and architecture not retained.
-- Metasploit Framework and Meterpreter — versions not retained.
-- `getuid` for session identity inspection; `getsystem` for the recalled elevation attempt.
+![Animated tools summary: Windows target; Metasploit and Meterpreter; getuid and getsystem. OS details and tool versions were not retained.](tools-used.svg)
 
 The initial access method, starting account and token privileges are unknown.
 
