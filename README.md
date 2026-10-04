@@ -1,3 +1,5 @@
+![Fahad — Cybersecurity, AI Security and DevSecOps](assets/fahad-banner.svg)
+
 # Hi, I'm Fahad
 
 **Cybersecurity · Offensive & Defensive Security · AI Security · DevSecOps**
