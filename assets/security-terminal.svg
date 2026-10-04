@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-labelledby="title desc">
+<title id="title">Fahad's security focus</title><desc id="desc">Terminal-style typing animation: Offensive Security, Defensive Security, AI Security and DevSecOps. Learn, test, detect, improve.</desc>
+<style>
+.reveal { animation: typing 10s steps(62,end) infinite; }
+.cursor { animation: blink 1s steps(2,end) infinite; }
+@keyframes typing { 0%,8% { width:0 } 65%,95%,100% { width:900px } }
+@keyframes blink { 50% { opacity:0 } }
+@media (prefers-reduced-motion:reduce) { .reveal,.cursor { animation:none } }
+</style>
+<defs><clipPath id="typing"><rect class="reveal" x="32" y="122" width="900" height="40"/></clipPath></defs>
+<rect x="1" y="1" width="998" height="258" rx="16" fill="#080f1d" stroke="#223a56" stroke-width="2"/>
+<path d="M17 1H983Q999 1 999 17V49H1V17Q1 1 17 1" fill="#122137"/>
+<circle cx="26" cy="25" r="5" fill="#f87171"/><circle cx="46" cy="25" r="5" fill="#fbbf24"/><circle cx="66" cy="25" r="5" fill="#34d399"/>
+<text x="500" y="30" text-anchor="middle" font-family="monospace" font-size="13" fill="#98adc7">fahad / security-workbench</text>
+<g font-family="monospace">
+<text x="32" y="99" font-size="18" fill="#7dd3fc">$ cat focus.txt</text>
+<text x="32" y="150" font-size="20" fill="#e2edff" clip-path="url(#typing)">Offensive Security / Defensive Security / AI Security / DevSecOps</text>
+<text x="32" y="202" font-size="16" fill="#94abc6">Learn. Test. Detect. Improve.</text>
+<text x="32" y="238" font-size="17" fill="#7dd3fc">$</text>
+<rect class="cursor" x="54" y="223" width="9" height="18" fill="#38bdf8"/>
+</g></svg>
