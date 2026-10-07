@@ -1,5 +1,7 @@
 ![FERO — Cybersecurity, AI Security and DevSecOps](assets/fahad-banner.svg)
 
+![Profile views](https://komarev.com/ghpvc/?username=FAHAD-s3do&label=PROFILE+VIEWS&color=0e7490&style=for-the-badge)
+
 # Hi, I'm Fahad
 
 **Cybersecurity · Offensive & Defensive Security · AI Security · DevSecOps**
