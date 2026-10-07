@@ -1,6 +1,6 @@
 # Web Security Testing
 
-![Animated security and AI topics; retrospective records with evidence pending](../lab-collection.svg)
+![web-security-testing: conceptual topic animation, evidence pending](topic-animation.svg)
 
 > **Status: retrospective activity record — implementation evidence pending.**
 > The author reports performing this lab. The supplied platform session history records a launched environment; it does not independently verify completion or results. Original lab content, scripts and screenshots have not been supplied.
