@@ -154,6 +154,10 @@ A Docker/Nginx project with AWS deployment configuration and documented troubles
 
 ![Security radar: explore, observe, improve](assets/security-radar.svg)
 
+### [Linux Threat Hunter](projects/linux-threat-hunter/README.md)
+
+A fresh Python defensive triage tool for process, socket, persistence-configuration and SSH log review. Includes explicit collection coverage, JSON/HTML reports, a synthetic demo, nine automated tests and an animated workflow. Findings are investigation leads, not malware verdicts.
+
 ## Reconstructed lab notes
 
 [Browse selected security and applied AI lab records](labs/README.md) — six additional past activities, with implementation evidence pending.

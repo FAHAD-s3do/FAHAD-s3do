@@ -1,0 +1,95 @@
+{
+  "mode": "synthetic-demo",
+  "coverage": {
+    "processes": {
+      "status": "synthetic",
+      "records": 0,
+      "note": "Fabricated fixture; no host collection."
+    },
+    "listeners": {
+      "status": "synthetic",
+      "records": 0,
+      "note": "Fabricated fixture; no host collection."
+    },
+    "persistence": {
+      "status": "synthetic",
+      "records": 0,
+      "note": "Fabricated fixture; no host collection."
+    },
+    "ssh": {
+      "status": "synthetic",
+      "records": 0,
+      "note": "Fabricated fixture; no host collection."
+    }
+  },
+  "inventory": {
+    "processes": [
+      {
+        "pid": 4242,
+        "exe": "/tmp/demo-agent"
+      },
+      {
+        "pid": 4243,
+        "exe": "/usr/bin/demo-old (deleted)"
+      }
+    ],
+    "listeners": [
+      {
+        "protocol": "tcp",
+        "state": "LISTEN",
+        "local": "0.0.0.0:8080"
+      },
+      {
+        "protocol": "udp",
+        "state": "UNCONN",
+        "local": "127.0.0.1:5353"
+      }
+    ],
+    "persistence": [],
+    "ssh": {
+      "failed_password_messages": 5,
+      "sources": {
+        "192.0.2.10": 5
+      }
+    }
+  },
+  "findings": [
+    {
+      "rule": "PROC_TEMP",
+      "severity": "medium",
+      "subject": "PID 4242",
+      "evidence": "/tmp/demo-agent",
+      "recommendation": "Verify the executable owner, origin and expected application behavior."
+    },
+    {
+      "rule": "PROC_DELETED",
+      "severity": "medium",
+      "subject": "PID 4243",
+      "evidence": "/usr/bin/demo-old (deleted)",
+      "recommendation": "Check package upgrades and process provenance before escalation."
+    },
+    {
+      "rule": "NET_WILDCARD",
+      "severity": "info",
+      "subject": "0.0.0.0:8080",
+      "evidence": "tcp",
+      "recommendation": "Confirm bind scope and firewall policy. A wildcard bind alone does not establish external reachability."
+    },
+    {
+      "rule": "SSH_REPEATED_FAILURE",
+      "severity": "medium",
+      "subject": "192.0.2.10",
+      "evidence": "5 failed-password messages in the inspected sample (no time-window calculation).",
+      "recommendation": "Correlate with successful logins and account activity; retries or automation may explain failures."
+    },
+    {
+      "rule": "PERSIST_TEMP_REFERENCE",
+      "severity": "medium",
+      "subject": "/etc/cron.d/demo",
+      "evidence": "Active configuration references /tmp, /var/tmp or /dev/shm. Raw content withheld.",
+      "recommendation": "Review the full configuration locally. This reference may be benign and is not proof of execution."
+    }
+  ],
+  "version": "1.0.0",
+  "generated_at": "2026-10-08T06:39:04.001455+00:00"
+}
