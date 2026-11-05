@@ -153,12 +153,6 @@ My current focus is application and cloud security, defensive monitoring, AI sec
 - **AI security:** Prompt injection, model and agent boundaries, and synthetic evaluation methods. See the [LLM evaluation project](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab).
 - **Cloud and DevSecOps:** Docker-based delivery, AWS deployment, CI/CD security, and least-privilege access. See the [AWS deployment project](https://github.com/FAHAD-s3do/docker-ecr-deployment).
 
-## Next projects
-
-- Pair an authorized security test with captured telemetry, a detection, and a remediation retest.
-- Expand AI security evaluations with documented test cases and results.
-- Add dependency, container, and infrastructure checks to the CI/CD demo.
-
 ## `~/notes` — How I document my work
 
 My goal for each project is a clear problem statement, reproducible setup, evidence of results, troubleshooting notes, and practical improvements.
