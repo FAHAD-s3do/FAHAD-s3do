@@ -129,12 +129,6 @@ Security frameworks
 | Infrastructure & orchestration | Kubernetes, Terraform, Ansible | Ongoing learning |
 | AI & AI security | Machine learning foundations, LLM application security, prompt injection, model/agent evaluation | Ongoing study and planned evaluations |
 
-## `~/learning` — Learning background
-
-- **Completed:** cybersecurity coursework.
-- **In progress:** DevOps, cloud infrastructure, and artificial intelligence coursework.
-- **Applied practice:** security labs, cloud deployment configuration, and technical troubleshooting.
-
 <img src="assets/circuit-divider.svg" alt="" width="1000" />
 
 ## `~/projects` — Featured project
