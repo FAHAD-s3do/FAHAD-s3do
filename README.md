@@ -131,19 +131,10 @@ Security frameworks
 
 <img src="assets/circuit-divider.svg" alt="" width="1000" />
 
-## `~/projects` — Featured project
+## Featured projects
 
-### [Container deployment pipeline on AWS](https://github.com/FAHAD-s3do/docker-ecr-deployment)
-
-A Docker/Nginx deployment example using AWS ECR, ECS Fargate, CodeBuild, and CodePipeline.
-
-[Dockerfile](https://github.com/FAHAD-s3do/docker-ecr-deployment/blob/main/Dockerfile) · [Build configuration](https://github.com/FAHAD-s3do/docker-ecr-deployment/blob/main/buildspec.yml) · [ECS configuration](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main/ecs-fargate-deployment) · [Troubleshooting](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main/codepipeline-cd)
-
-![Security radar: explore, observe, improve](assets/security-radar.svg)
-
-### [Linux Threat Hunter](projects/linux-threat-hunter/README.md)
-
-A fresh Python defensive triage tool for process, socket, persistence-configuration and SSH log review. Includes explicit collection coverage, JSON/HTML reports, a synthetic demo, nine automated tests and an animated workflow. Findings are investigation leads, not malware verdicts.
+- **[Container deployment pipeline on AWS](https://github.com/FAHAD-s3do/docker-ecr-deployment)** — Docker/Nginx deployment using AWS ECR, ECS Fargate, CodeBuild, and CodePipeline. [Configuration](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main) · [Troubleshooting](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main/codepipeline-cd)
+- **[Linux Threat Hunter](projects/linux-threat-hunter/README.md)** — Python triage tool for process, network, persistence, and SSH activity, with JSON/HTML reports and synthetic test data.
 
 ## Reconstructed lab notes
 
