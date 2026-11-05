@@ -1,94 +1,109 @@
 # AuthGuard Triage
 
 [![CI](https://github.com/FAHAD-s3do/FAHAD-s3do/actions/workflows/authguard-triage.yml/badge.svg?branch=main)](https://github.com/FAHAD-s3do/FAHAD-s3do/actions/workflows/authguard-triage.yml)
+[![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Offline Linux authentication-log triage with explainable findings and shareable reports.**
+**A local-first triage tool for Linux authentication logs.** AuthGuard turns a copied `auth.log` or syslog file into explainable findings and portable JSON or HTML reports. It uses the Python standard library at runtime and makes no network requests.
 
-AuthGuard reads a copied **auth.log** or ISO-timestamped syslog file, groups useful security events, and highlights a small set of high-signal patterns. It runs locally, makes no network requests, and never changes the source host.
+## How it works
 
-## What it detects
+```mermaid
+flowchart LR
+    A[Authentication log] --> B[Parse and normalize]
+    B --> C[Apply configurable rules]
+    C --> D[Explainable findings]
+    D --> E[JSON report]
+    D --> F[Standalone HTML report]
+```
 
-| Rule | Default severity | Evidence |
+## Detection coverage
+
+| Pattern | Default severity | Evidence included |
 |---|---|---|
-| Repeated SSH authentication failures from one source within a time window | High | Source IP, event count, first/last time, and original line numbers |
-| SSH failures targeting multiple usernames from one source in a time window | High | Targeted account count and original line numbers |
-| Successful SSH login shortly after repeated failures | High | Failed attempts and the later successful login |
-| Successful SSH login directly as root | Critical | Login event and source IP |
-| Local user account creation | High | Account name and source line |
+| Repeated SSH failures from one source | High | Count, time range, source, and log line numbers |
+| SSH failures across multiple usernames | High | Targeted account count and line numbers |
+| Successful SSH login after repeated failures | High | Failed attempts and subsequent login |
+| Direct SSH login as `root` | Critical | Login event and source |
+| Local account creation | High | Account name and source line |
 
-Thresholds and allowlists can be set in a strict JSON config. Findings are investigation leads, not proof of compromise. Routine sudo activity is counted but not labeled suspicious by itself.
+Thresholds and allowlists are configurable. Routine `sudo` activity is recorded but is not treated as suspicious by itself. Findings are review leads, not proof of compromise.
 
-## Install
+## Quick start
 
-Python 3.11 or newer is required. AuthGuard uses only the Python standard library at runtime.
+Requires Python 3.11 or newer.
 
-~~~bash
+```bash
+git clone https://github.com/FAHAD-s3do/FAHAD-s3do.git
+cd FAHAD-s3do/projects/authguard-triage
 python -m venv .venv
-~~~
+```
 
-Activate the environment, then install from the repository root:
+Activate the environment, then install the package:
 
-~~~bash
+Activate the environment for your shell, then install:
+
+```powershell
+.venv\Scripts\Activate.ps1
 python -m pip install .
-~~~
+```
 
-On Windows, activate with **.venv\Scripts\Activate.ps1**; on Linux or macOS, use **source .venv/bin/activate**.
+```bash
+source .venv/bin/activate
+python -m pip install .
+```
 
-## Run against a log
+Analyze a log and create both report formats:
 
-Classic syslog timestamps omit the year and timezone. Supply both explicitly when they differ from the defaults:
-
-~~~bash
+```bash
 authguard /path/to/auth.log \
   --year 2026 \
   --timezone Asia/Karachi \
   --config config/example.json \
   --json out/report.json \
-  --html out/report.html
-~~~
+  --html out/report.html \
+  --redact-ips
+```
 
-Try the included synthetic fixture:
+For classic syslog timestamps, set the year and timezone that apply to the source log. AuthGuard defaults to the current year and UTC.
 
-~~~bash
+## Example
+
+Run the included synthetic log:
+
+```bash
 authguard examples/auth.log --year 2026 --json out/report.json --html out/report.html --redact-ips
-~~~
+```
 
-The fixture produces six findings: two SSH failure bursts, a multi-account spray pattern, a success after failures, a direct root login, and a new account. All sample addresses come from documentation-only IP ranges.
+The fixture demonstrates six findings across SSH failure bursts, a multi-account pattern, a login after failures, direct root access, and account creation. Its IP addresses are reserved for documentation.
 
-See the [sample JSON report](examples/report.json) and [sample HTML report](examples/report.html) for redacted output.
+- [Sample JSON report](examples/report.json)
+- [Sample HTML report](examples/report.html)
 
-Use **python -m authguard --help** for all options. **--fail-on high** returns exit code 1 when a high or critical finding is present, which can be used as a CI gate.
+Use `authguard --help` or `python -m authguard --help` to see all options. `--fail-on high` returns exit code 1 when a high or critical finding is present.
 
-## Reports and privacy
+## Privacy and safe handling
 
-- JSON and standalone HTML reports contain summaries, line-number evidence, explanations, and suggested review steps.
-- Raw log lines, sudo command text, and full local paths are not copied into reports.
-- **--redact-ips** replaces source IPs with **<redacted>** in report findings.
-- Report files are written atomically. Output paths cannot overwrite the input log or each other.
-- Treat source logs and unredacted reports as sensitive operational data. Store them with appropriate access controls and delete them according to your organization's retention policy.
+- Reports include summaries, explanations, recommendations, and source line numbers; they omit raw log lines, sudo command text, and full local paths.
+- Use `--redact-ips` before sharing reports when source addresses are not needed.
+- Reports are written atomically, and output paths cannot overwrite the input log.
+- Treat source logs and unredacted reports as sensitive operational data.
 
-## Detection behavior
+## Development
 
-Defaults: five failed SSH attempts from one IP and host within ten minutes. The window begins at the first event in a burst; separate bursts are emitted when the next event falls outside that window. Allowlisted IPs are excluded from SSH failure detections and allowlisted usernames are excluded from direct-root-login and new-account findings.
-
-The parser supports common month/day/time syslog records, ISO timestamps with offsets, and ISO timestamps without offsets. For classic syslog, **--year** and **--timezone** are applied. Unsupported or malformed lines are counted instead of silently disappearing.
-
-## Validation
-
-Run the unit and CLI checks:
-
-~~~bash
+```bash
+python -m pip install --no-deps -e .
 python -m unittest discover -s tests -v
 authguard examples/auth.log --year 2026 --json out/report.json --html out/report.html --redact-ips
-~~~
+```
 
-GitHub Actions runs the same checks on pushes and pull requests.
+GitHub Actions runs the unit suite and analyzes the synthetic fixture on pushes and pull requests.
 
-## Scope and limitations
+## Scope
 
-AuthGuard is a local triage aid, not an endpoint agent, SIEM, forensic acquisition system, or automated response tool. It does not block IPs, kill processes, query hosts, fetch threat intelligence, or decide whether an event is malicious. Log format differences, missing records, clock skew, NAT, and shared accounts can affect results. Review the original log around each cited line before taking action.
+AuthGuard is an offline triage aid, not an endpoint agent, SIEM, forensic acquisition system, or response tool. It does not block addresses, query hosts, fetch threat intelligence, or determine whether activity is malicious. Missing records, clock skew, NAT, shared accounts, and log format differences can affect results. Confirm findings against the original log and other available evidence.
 
-Security testing is limited to systems and data you own or are authorized to assess. Never publish real authentication logs or reports containing operational identifiers without authorization.
+Use only logs and systems you own or are authorized to review. Do not publish real authentication logs or reports containing operational identifiers without authorization.
 
 ## License
 
