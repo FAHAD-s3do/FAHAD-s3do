@@ -1,0 +1,162 @@
+{
+  "finding_count": 6,
+  "findings": [
+    {
+      "event_count": 1,
+      "evidence_lines": [
+        7
+      ],
+      "finding_id": "13beddd55515",
+      "first_seen": "2026-10-31T04:06:00Z",
+      "host": "edge-01",
+      "last_seen": "2026-10-31T04:06:00Z",
+      "recommendations": [
+        "Verify the activity with the account owner.",
+        "Prefer named accounts with audited privilege elevation."
+      ],
+      "rule_id": "root-ssh-login",
+      "severity": "critical",
+      "source_ip": "<redacted>",
+      "summary": "A direct SSH session authenticated as root.",
+      "title": "Successful SSH login as root",
+      "user": "root"
+    },
+    {
+      "event_count": 5,
+      "evidence_lines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "finding_id": "40d760443a27",
+      "first_seen": "2026-10-31T04:00:00Z",
+      "host": "edge-01",
+      "last_seen": "2026-10-31T04:04:00Z",
+      "recommendations": [
+        "Check whether the source is expected.",
+        "Review firewall, rate-limit, and SSH authentication controls."
+      ],
+      "rule_id": "ssh-failure-burst",
+      "severity": "high",
+      "source_ip": "<redacted>",
+      "summary": "5 failed attempts from one source occurred within 10 minutes.",
+      "title": "Repeated SSH authentication failures",
+      "user": null
+    },
+    {
+      "event_count": 6,
+      "evidence_lines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "finding_id": "2758d5200b49",
+      "first_seen": "2026-10-31T04:00:00Z",
+      "host": "edge-01",
+      "last_seen": "2026-10-31T04:05:00Z",
+      "recommendations": [
+        "Verify the login with the account owner.",
+        "Review nearby authentication and privilege-elevation events."
+      ],
+      "rule_id": "ssh-success-after-failures",
+      "severity": "high",
+      "source_ip": "<redacted>",
+      "summary": "5 failed attempts were followed by a successful SSH login within 10 minutes.",
+      "title": "SSH login succeeded after repeated failures",
+      "user": "deploy"
+    },
+    {
+      "event_count": 1,
+      "evidence_lines": [
+        8
+      ],
+      "finding_id": "fe8f1eedaf63",
+      "first_seen": "2026-10-31T04:07:00Z",
+      "host": "edge-01",
+      "last_seen": "2026-10-31T04:07:00Z",
+      "recommendations": [
+        "Confirm the account request and provisioning change.",
+        "Review the account's groups and authentication settings."
+      ],
+      "rule_id": "account-created",
+      "severity": "high",
+      "source_ip": null,
+      "summary": "The authentication log records creation of a local user account.",
+      "title": "Local account created",
+      "user": "temporary"
+    },
+    {
+      "event_count": 5,
+      "evidence_lines": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "finding_id": "45a4d3ec5327",
+      "first_seen": "2026-10-31T05:00:00Z",
+      "host": "edge-01",
+      "last_seen": "2026-10-31T05:04:00Z",
+      "recommendations": [
+        "Check whether the source is expected.",
+        "Review firewall, rate-limit, and SSH authentication controls."
+      ],
+      "rule_id": "ssh-failure-burst",
+      "severity": "high",
+      "source_ip": "<redacted>",
+      "summary": "5 failed attempts from one source occurred within 10 minutes.",
+      "title": "Repeated SSH authentication failures",
+      "user": null
+    },
+    {
+      "event_count": 5,
+      "evidence_lines": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "finding_id": "0b72deda5169",
+      "first_seen": "2026-10-31T05:00:00Z",
+      "host": "edge-01",
+      "last_seen": "2026-10-31T05:04:00Z",
+      "recommendations": [
+        "Check whether the source is an approved identity or vulnerability scanner.",
+        "Review authentication outcomes for the targeted accounts."
+      ],
+      "rule_id": "ssh-user-spray",
+      "severity": "high",
+      "source_ip": "<redacted>",
+      "summary": "5 distinct usernames were targeted from one source within 10 minutes.",
+      "title": "SSH failures targeted multiple accounts",
+      "user": null
+    }
+  ],
+  "generated_at": "2026-11-05T09:23:13.517020Z",
+  "privacy": {
+    "raw_log_lines_included": false,
+    "source_ips_redacted": true
+  },
+  "schema_version": 1,
+  "source_file": "auth.log",
+  "summary": {
+    "event_counts": {
+      "ssh_failed": 10,
+      "ssh_root_login": 1,
+      "ssh_success": 1,
+      "user_created": 1
+    },
+    "ignored_lines": 1,
+    "invalid_lines": 0,
+    "parsed_events": 13,
+    "total_lines": 14
+  },
+  "tool": "AuthGuard Triage"
+}

@@ -1,0 +1,7 @@
+{
+  "ssh_failure_threshold": 5,
+  "ssh_distinct_user_threshold": 5,
+  "window_minutes": 10,
+  "allowlisted_ips": ["192.0.2.10"],
+  "allowlisted_users": ["backup"]
+}
