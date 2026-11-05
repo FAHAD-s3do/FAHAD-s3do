@@ -1,10 +1,10 @@
-# AuthGuard Triage
+# AuthGuard — Linux Authentication Log Analyzer
 
 [![CI](https://github.com/FAHAD-s3do/FAHAD-s3do/actions/workflows/authguard-triage.yml/badge.svg?branch=main)](https://github.com/FAHAD-s3do/FAHAD-s3do/actions/workflows/authguard-triage.yml)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**A local-first triage tool for Linux authentication logs.** AuthGuard turns a copied `auth.log` or syslog file into explainable findings and portable JSON or HTML reports. It uses the Python standard library at runtime and makes no network requests.
+**Offline Linux authentication log analysis with explainable findings.** AuthGuard turns a copied `auth.log` or syslog file into portable JSON or HTML reports. It uses the Python standard library at runtime and makes no network requests.
 
 ## How it works
 
@@ -33,8 +33,6 @@ git clone https://github.com/FAHAD-s3do/FAHAD-s3do.git
 cd FAHAD-s3do/projects/authguard-triage
 python -m venv .venv
 ```
-
-Activate the environment, then install the package:
 
 Activate the environment for your shell, then install:
 
@@ -83,6 +81,13 @@ Use `authguard --help` or `python -m authguard --help` to see all options. `--fa
 - Use `--redact-ips` before sharing reports when source addresses are not needed.
 - Reports are written atomically, and output paths cannot overwrite the input log.
 - Treat source logs and unredacted reports as sensitive operational data.
+
+## Documentation
+
+- [User guide](docs/USER_GUIDE.md): supported formats, configuration, command options, report fields, and troubleshooting.
+- [Threat model and data handling](docs/THREAT_MODEL.md): trust boundaries, controls, and limitations.
+- [Security policy](SECURITY.md): safe use and vulnerability reporting.
+- [Contributing](CONTRIBUTING.md): development setup and change expectations.
 
 ## Development
 
