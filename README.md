@@ -146,12 +146,11 @@ A retrospective write-up of a Windows lab using `getsystem`, with an author-repo
 
 ## Security focus
 
-My current focus is application and cloud security, defensive monitoring, AI security, and DevSecOps. Project READMEs describe implemented work; the areas below include ongoing study.
+My work and ongoing study cover four areas:
 
-- **Offensive security:** Web and network assessment, Windows/Linux security fundamentals, and exploit concepts in authorized labs.
-- **Defensive security:** Log analysis, incident investigation, detection engineering, and system hardening.
-- **AI security:** Prompt injection, model and agent boundaries, and synthetic evaluation methods. See the [LLM evaluation project](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab).
-- **Cloud and DevSecOps:** Docker-based delivery, AWS deployment, CI/CD security, and least-privilege access. See the [AWS deployment project](https://github.com/FAHAD-s3do/docker-ecr-deployment).
+![Animated radar showing offensive security, defensive security, AI security, and cloud and DevSecOps](assets/security-radar.svg)
+
+Project READMEs describe the work I have implemented; the animation also includes areas I am continuing to study.
 
 ## `~/notes` — How I document my work
 
