@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">AuthGuard triage workflow</title>
+  <desc id="desc">A local authentication log is parsed and normalized, analyzed by configurable detection rules, and summarized in JSON and HTML reports. No network connection is used.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1424"/>
+      <stop offset="1" stop-color="#101d30"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#46d6c5"/>
+      <stop offset="1" stop-color="#78a9ff"/>
+    </linearGradient>
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+      .title{fill:#f4f8ff;font-size:25px;font-weight:700;letter-spacing:.1px}
+      .sub{fill:#93a7c1;font-size:13px}
+      .label{fill:#eef4ff;font-size:14px;font-weight:650}
+      .detail{fill:#9eafc7;font-size:11px}
+      .tiny{fill:#7086a2;font-size:10px;font-weight:650;letter-spacing:1.5px}
+      .card{fill:#14243a;stroke:#2a405c;stroke-width:1.2}
+      .line{fill:none;stroke:#3c5878;stroke-width:2}
+      .dash{fill:none;stroke:url(#accent);stroke-width:2.5;stroke-linecap:round;stroke-dasharray:5 13;animation:flow 2.4s linear infinite}
+      .pulse{fill:#65e2d1;filter:url(#glow);animation:blink 2.4s ease-in-out infinite}
+      .icon{fill:none;stroke:#82d8d0;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+      @keyframes flow{to{stroke-dashoffset:-72}}
+      @keyframes blink{0%,100%{opacity:.45}50%{opacity:1}}
+      @media(prefers-reduced-motion:reduce){.dash,.pulse{animation:none}}
+    </style>
+  </defs>
+  <rect x="1" y="1" width="1198" height="428" rx="20" fill="url(#bg)" stroke="#263950"/>
+  <circle cx="1074" cy="74" r="118" fill="#17314b" opacity=".26"/>
+  <circle cx="1060" cy="74" r="75" fill="#17314b" opacity=".18"/>
+
+  <text x="52" y="58" class="title">From authentication logs to actionable review</text>
+  <text x="52" y="83" class="sub">A private, local-first workflow. Analyze evidence without sending logs off the host.</text>
+  <rect x="1012" y="42" width="136" height="30" rx="15" fill="#102c32" stroke="#28655f"/>
+  <circle cx="1031" cy="57" r="4" fill="#55d4b9"/>
+  <text x="1043" y="61" fill="#9ae5d7" font-size="10" font-weight="700" letter-spacing="1">OFFLINE BY DESIGN</text>
+
+  <path class="line" d="M258 213H326M510 213H578M762 213H830"/>
+  <path class="dash" d="M258 213H326M510 213H578M762 213H830"/>
+  <circle class="pulse" cx="0" cy="0" r="3.5">
+    <animateMotion dur="4.8s" repeatCount="indefinite" path="M258 213H326M510 213H578M762 213H830"/>
+  </circle>
+
+  <g transform="translate(52 143)">
+    <rect class="card" width="206" height="140" rx="14"/>
+    <rect x="17" y="18" width="34" height="34" rx="9" fill="#183b45"/>
+    <path class="icon" d="M26 28h16M26 34h16M26 40h11M23 25v18"/>
+    <text x="17" y="78" class="tiny">01 · INPUT</text>
+    <text x="17" y="101" class="label">Authentication log</text>
+    <text x="17" y="121" class="detail">Copied auth.log or syslog file</text>
+  </g>
+  <g transform="translate(326 143)">
+    <rect class="card" width="184" height="140" rx="14"/>
+    <rect x="17" y="18" width="34" height="34" rx="9" fill="#1b3150"/>
+    <path class="icon" d="M24 27h20M24 35h14M24 43h17M40 33l4 2-4 2"/>
+    <text x="17" y="78" class="tiny">02 · PARSE</text>
+    <text x="17" y="101" class="label">Normalize events</text>
+    <text x="17" y="121" class="detail">Time, host, user, source</text>
+  </g>
+  <g transform="translate(578 143)">
+    <rect class="card" width="184" height="140" rx="14"/>
+    <rect x="17" y="18" width="34" height="34" rx="9" fill="#302b50"/>
+    <path class="icon" d="M34 24v7m0 0-8 5m8-5 8 5m-8-5v12M22 37h8m8 0h8M30 47h8"/>
+    <text x="17" y="78" class="tiny">03 · ANALYZE</text>
+    <text x="17" y="101" class="label">Apply detection rules</text>
+    <text x="17" y="121" class="detail">Thresholds and allowlists</text>
+  </g>
+  <g transform="translate(830 143)">
+    <rect class="card" width="318" height="140" rx="14"/>
+    <rect x="17" y="18" width="34" height="34" rx="9" fill="#183b45"/>
+    <path class="icon" d="M25 26h18v19H25zM29 31h10M29 36h10M29 41h7"/>
+    <text x="17" y="78" class="tiny">04 · REVIEW</text>
+    <text x="17" y="101" class="label">Explainable reports</text>
+    <text x="17" y="121" class="detail">Evidence lines · rationale · review steps</text>
+    <rect x="222" y="20" width="78" height="26" rx="7" fill="#1a3047" stroke="#355270"/>
+    <text x="261" y="37" text-anchor="middle" fill="#bbd4ef" font-size="11" font-weight="700">JSON</text>
+    <rect x="222" y="51" width="78" height="26" rx="7" fill="#1b383d" stroke="#32675e"/>
+    <text x="261" y="68" text-anchor="middle" fill="#a8e6d8" font-size="11" font-weight="700">HTML</text>
+  </g>
+
+  <path d="M52 322H1148" stroke="#263950"/>
+  <text x="52" y="355" class="tiny">BUILT FOR SAFE TRIAGE</text>
+  <g transform="translate(52 378)">
+    <circle cx="5" cy="0" r="3" fill="#56d3bd"/><text x="16" y="4" class="detail">No outbound requests</text>
+    <circle cx="190" cy="0" r="3" fill="#78a9ff"/><text x="201" y="4" class="detail">Raw lines excluded from reports</text>
+    <circle cx="450" cy="0" r="3" fill="#bb9cff"/><text x="461" y="4" class="detail">Optional source IP redaction</text>
+  </g>
+</svg>

@@ -8,14 +8,9 @@
 
 ## How it works
 
-```mermaid
-flowchart LR
-    A[Authentication log] --> B[Parse and normalize]
-    B --> C[Apply configurable rules]
-    C --> D[Explainable findings]
-    D --> E[JSON report]
-    D --> F[Standalone HTML report]
-```
+![Animated AuthGuard workflow: an authentication log is normalized, checked against configurable rules, and turned into explainable JSON and HTML reports.](docs/assets/authguard-workflow.svg)
+
+The animation is decorative; the same workflow is described in the detection and reporting sections below.
 
 ## Detection coverage
 
