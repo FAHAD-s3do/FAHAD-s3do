@@ -39,13 +39,28 @@ def render_json(report: dict[str, Any]) -> str:
     return json.dumps(report, indent=2, sort_keys=True, ensure_ascii=False) + "\n"
 
 
+def _evidence_references(finding: dict[str, Any]) -> str:
+    refs = []
+    files = finding.get("evidence_files", [])
+    hosts = finding.get("evidence_hosts", [])
+    for index, line in enumerate(finding["evidence_lines"]):
+        parts = []
+        if index < len(hosts) and (finding["host"] == "multiple hosts" or hosts[index] != finding["host"]):
+            parts.append(hosts[index])
+        if index < len(files):
+            parts.append(files[index])
+        parts.append(str(line))
+        refs.append(":".join(parts))
+    return ", ".join(refs)
+
+
 def render_html(report: dict[str, Any]) -> str:
     summary = report["summary"]
     cells = "".join(
         f"<tr><td>{html.escape(str(f['severity']).upper())}</td>"
         f"<td>{html.escape(f['title'])}</td><td>{html.escape(f['host'])}</td>"
         f"<td>{html.escape(str(f.get('source_ip') or '—'))}</td>"
-        f"<td>{html.escape(', '.join(f'{name}:{line}' for name, line in zip(f.get('evidence_files', []), f['evidence_lines']))) or html.escape(', '.join(map(str, f['evidence_lines'])))}</td>"
+        f"<td>{html.escape(_evidence_references(f))}</td>"
         f"<td>{html.escape(f['summary'])}<ul>"
         f"{''.join('<li>' + html.escape(item) + '</li>' for item in f['recommendations'])}</ul></td></tr>"
         for f in report["findings"]

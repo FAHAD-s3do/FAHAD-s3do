@@ -16,6 +16,8 @@ from .models import AuthEvent, Finding
 class RuleConfig:
     ssh_failure_threshold: int = 5
     ssh_distinct_user_threshold: int = 5
+    ssh_campaign_failure_threshold: int = 10
+    ssh_distinct_host_threshold: int = 3
     window_minutes: int = 10
     allowlisted_ips: frozenset[str] = frozenset()
     allowlisted_users: frozenset[str] = frozenset()
@@ -25,6 +27,10 @@ class RuleConfig:
             raise ValueError("ssh_failure_threshold must be between 2 and 1000")
         if not 2 <= self.ssh_distinct_user_threshold <= 1000:
             raise ValueError("ssh_distinct_user_threshold must be between 2 and 1000")
+        if not 2 <= self.ssh_campaign_failure_threshold <= 10000:
+            raise ValueError("ssh_campaign_failure_threshold must be between 2 and 10000")
+        if not 2 <= self.ssh_distinct_host_threshold <= 1000:
+            raise ValueError("ssh_distinct_host_threshold must be between 2 and 1000")
         if not 1 <= self.window_minutes <= 1440:
             raise ValueError("window_minutes must be between 1 and 1440")
 
@@ -41,11 +47,14 @@ def analyze_events(events: Iterable[AuthEvent], config: RuleConfig) -> tuple[Fin
     ordered = tuple(sorted(events, key=lambda event: (event.timestamp, event.line_number)))
     findings: list[Finding] = []
     failures: dict[tuple[str, str], list[AuthEvent]] = defaultdict(list)
+    campaigns: dict[str, list[AuthEvent]] = defaultdict(list)
     successes: list[AuthEvent] = []
 
     for event in ordered:
         if event.kind == "ssh_failed" and event.source_ip not in config.allowlisted_ips:
             failures[(event.host, event.source_ip or "unknown")].append(event)
+            if event.source_ip:
+                campaigns[event.source_ip].append(event)
         elif event.kind in {"ssh_success", "ssh_root_login"}:
             successes.append(event)
 
@@ -101,6 +110,19 @@ def analyze_events(events: Iterable[AuthEvent], config: RuleConfig) -> tuple[Fin
                 cluster = []
             cluster.append(event)
         findings.extend(_cluster_findings(host, source_ip, cluster, config))
+
+    for source_ip, items in sorted(campaigns.items()):
+        cluster = []
+        for event in sorted(items, key=lambda item: (item.timestamp, item.host, item.line_number)):
+            if cluster and event.timestamp - cluster[0].timestamp > window:
+                campaign = _campaign_finding(source_ip, cluster, config)
+                if campaign:
+                    findings.append(campaign)
+                cluster = []
+            cluster.append(event)
+        campaign = _campaign_finding(source_ip, cluster, config)
+        if campaign:
+            findings.append(campaign)
 
     for success in successes:
         if not success.source_ip or success.source_ip in config.allowlisted_ips:
@@ -186,3 +208,27 @@ def _cluster_findings(host: str, source_ip: str, cluster: list[AuthEvent], confi
             )
         )
     return findings
+
+
+def _campaign_finding(source_ip: str, events: list[AuthEvent], config: RuleConfig) -> Finding | None:
+    hosts = tuple(sorted({event.host for event in events}))
+    if len(events) < config.ssh_campaign_failure_threshold or len(hosts) < config.ssh_distinct_host_threshold:
+        return None
+    first, last = events[0], events[-1]
+    return Finding(
+        _finding_id("ssh-cross-host-campaign", "multiple hosts", source_ip, first),
+        "ssh-cross-host-campaign",
+        "high",
+        "SSH failures spanned multiple hosts",
+        f"{len(events)} failed SSH attempts from one source targeted {len(hosts)} hosts within {config.window_minutes} minutes.",
+        "multiple hosts",
+        first.timestamp,
+        last.timestamp,
+        tuple(event.line_number for event in events),
+        len(events),
+        source_ip,
+        None,
+        ("Check whether the source is an approved scanner or monitoring system.", "Review authentication activity on every listed host and apply coordinated controls if warranted."),
+        evidence_files=tuple(event.source_file for event in events),
+        evidence_hosts=tuple(event.host for event in events),
+    )

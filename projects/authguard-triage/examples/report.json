@@ -1,11 +1,12 @@
 {
-  "finding_count": 6,
+  "finding_count": 7,
   "findings": [
     {
       "event_count": 1,
       "evidence_files": [
         "auth.log"
       ],
+      "evidence_hosts": [],
       "evidence_lines": [
         7
       ],
@@ -33,6 +34,7 @@
         "auth.log",
         "auth.log"
       ],
+      "evidence_hosts": [],
       "evidence_lines": [
         1,
         2,
@@ -65,6 +67,7 @@
         "auth.log",
         "auth.log"
       ],
+      "evidence_hosts": [],
       "evidence_lines": [
         1,
         2,
@@ -93,6 +96,7 @@
       "evidence_files": [
         "auth.log"
       ],
+      "evidence_hosts": [],
       "evidence_lines": [
         8
       ],
@@ -120,6 +124,7 @@
         "auth.log",
         "auth.log"
       ],
+      "evidence_hosts": [],
       "evidence_lines": [
         10,
         11,
@@ -151,6 +156,7 @@
         "auth.log",
         "auth.log"
       ],
+      "evidence_hosts": [],
       "evidence_lines": [
         10,
         11,
@@ -172,9 +178,68 @@
       "summary": "5 distinct usernames were targeted from one source within 10 minutes.",
       "title": "SSH failures targeted multiple accounts",
       "user": null
+    },
+    {
+      "event_count": 12,
+      "evidence_files": [
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log"
+      ],
+      "evidence_hosts": [
+        "edge-02",
+        "edge-03",
+        "edge-04",
+        "edge-02",
+        "edge-03",
+        "edge-04",
+        "edge-02",
+        "edge-03",
+        "edge-04",
+        "edge-02",
+        "edge-03",
+        "edge-04"
+      ],
+      "evidence_lines": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "finding_id": "edbaab46b18c",
+      "first_seen": "2026-10-31T06:00:00Z",
+      "host": "multiple hosts",
+      "last_seen": "2026-10-31T06:05:30Z",
+      "recommendations": [
+        "Check whether the source is an approved scanner or monitoring system.",
+        "Review authentication activity on every listed host and apply coordinated controls if warranted."
+      ],
+      "rule_id": "ssh-cross-host-campaign",
+      "severity": "high",
+      "source_ip": "<redacted>",
+      "summary": "12 failed SSH attempts from one source targeted 3 hosts within 10 minutes.",
+      "title": "SSH failures spanned multiple hosts",
+      "user": null
     }
   ],
-  "generated_at": "2026-11-05T09:46:27.366835Z",
+  "generated_at": "2026-11-05T09:59:22.690766Z",
   "privacy": {
     "raw_log_lines_included": false,
     "source_ips_redacted": true
@@ -186,15 +251,15 @@
   ],
   "summary": {
     "event_counts": {
-      "ssh_failed": 10,
+      "ssh_failed": 22,
       "ssh_root_login": 1,
       "ssh_success": 1,
       "user_created": 1
     },
     "ignored_lines": 1,
     "invalid_lines": 0,
-    "parsed_events": 13,
-    "total_lines": 14
+    "parsed_events": 25,
+    "total_lines": 26
   },
   "tool": "AuthGuard"
 }

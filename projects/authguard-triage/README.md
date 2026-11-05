@@ -18,6 +18,7 @@ The animation is decorative; the same workflow is described in the detection and
 |---|---|---|
 | Repeated SSH failures from one source | High | Count, time range, source, and log line numbers |
 | SSH failures across multiple usernames | High | Targeted account count and line numbers |
+| SSH failures spread across multiple hosts | High | Total attempts, host count, and per-host evidence |
 | Successful SSH login after repeated failures | High | Failed attempts and subsequent login |
 | Direct SSH login as `root` | Critical | Login event and source |
 | Local account creation | High | Account name and source line |
@@ -79,12 +80,12 @@ Run the included synthetic log:
 authguard examples/auth.log --year 2026 --json out/report.json --html out/report.html --redact-ips
 ```
 
-The fixture demonstrates six findings across SSH failure bursts, a multi-account pattern, a login after failures, direct root access, and account creation. Its IP addresses are reserved for documentation.
+The fixture demonstrates seven findings, including a coordinated SSH probe spread across three hosts. Its IP addresses are reserved for documentation.
 
 - [Sample JSON report](examples/report.json)
 - [Sample HTML report](examples/report.html)
 
-In combined reports, evidence references identify the source and original line, such as `auth.log.1:42`.
+In combined reports, evidence references identify the host, source file, and original line, such as `edge-02:auth.log.1:42`.
 
 Use `authguard --help` or `python -m authguard --help` to see all options. `--fail-on high` returns exit code 1 when a high or critical finding is present.
 

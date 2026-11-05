@@ -85,7 +85,7 @@ authguard examples/auth.log \
   --redact-ips
 ```
 
-This synthetic fixture contains reserved documentation IP addresses and demonstrates six findings. Compare your generated files with [sample JSON](../examples/report.json) and [sample HTML](../examples/report.html).
+This synthetic fixture contains reserved documentation IP addresses and demonstrates seven findings, including one probe correlated across three hosts. Compare your generated files with [sample JSON](../examples/report.json) and [sample HTML](../examples/report.html).
 
 ## Detection rules
 
@@ -93,11 +93,12 @@ This synthetic fixture contains reserved documentation IP addresses and demonstr
 |---|---|---|
 | SSH failure burst | At least five failures from one source and host within a ten-minute window | High |
 | SSH multi-account pattern | Failures targeting at least five distinct, non-allowlisted usernames from one source and host within a ten-minute window | High |
+| Cross-host SSH campaign | At least ten failures from one source across at least three hosts within a ten-minute window | High |
 | Login after failures | At least five failures followed by a successful login from the same source and host within ten minutes | High |
 | Direct root SSH login | A successful SSH login as root | Critical |
 | Local account creation | A `useradd` account creation event | High |
 
-The SSH failure window starts with the first failure in a group. A later event outside the window starts a new group. Findings are deterministic summaries of parsed evidence, not a verdict about intent or compromise. `sudo` events are counted for context and are not independently flagged.
+SSH windows start with the first failure in a group. A later event outside the window starts a new group. Cross-host correlation is performed across all files passed in the same command, and only failures with a parsed source IP can contribute. Findings are deterministic summaries of parsed evidence, not a verdict about intent or compromise. `sudo` events are counted for context and are not independently flagged.
 
 ## Configuration
 
@@ -107,6 +108,8 @@ Use `--config config/example.json` to load strict JSON settings. Unknown or dupl
 {
   "ssh_failure_threshold": 5,
   "ssh_distinct_user_threshold": 5,
+  "ssh_campaign_failure_threshold": 10,
+  "ssh_distinct_host_threshold": 3,
   "window_minutes": 10,
   "allowlisted_ips": ["192.0.2.10"],
   "allowlisted_users": ["backup"]
@@ -117,6 +120,8 @@ Use `--config config/example.json` to load strict JSON settings. Unknown or dupl
 |---|---|---:|---|
 | `ssh_failure_threshold` | integer | 5 | 2–1000 failures for burst and success-after-failures findings |
 | `ssh_distinct_user_threshold` | integer | 5 | 2–1000 distinct usernames for the multi-account finding |
+| `ssh_campaign_failure_threshold` | integer | 10 | 2–10000 failures required for cross-host correlation |
+| `ssh_distinct_host_threshold` | integer | 3 | 2–1000 hosts required for cross-host correlation |
 | `window_minutes` | integer | 10 | 1–1440 minutes for SSH grouping |
 | `allowlisted_ips` | string array | `[]` | Excludes these source addresses from SSH failure and login-after-failure findings |
 | `allowlisted_users` | string array | `[]` | Excludes these usernames from multi-account counts, root login, and account creation findings |
@@ -139,7 +144,9 @@ When no report path is given, the JSON report is printed to standard output. Exi
 
 ## Understanding reports
 
-Each finding includes a stable finding ID, rule ID, severity, summary, host, time range, source where applicable, event count, original evidence file and line references, and recommended review steps. Use those references to inspect the source log in context. Reports do not include raw log lines, sudo command text, or the complete input path.
+Each finding includes a stable finding ID, rule ID, severity, summary, host, time range, source where applicable, event count, original evidence file and line references, and recommended review steps. For cross-host campaigns, `evidence_hosts`, `evidence_files`, and `evidence_lines` are aligned arrays: entries at the same index describe one event. Use those references to inspect the source logs in context. Reports do not include raw log lines, sudo command text, or the complete input path.
+
+The JSON report declares its format in `schema_version`. Consumers should check this field before relying on report structure.
 
 `--redact-ips` is useful for examples and sharing, but hostnames, usernames, timestamps, and other context may still identify an environment. Review a report before publishing it.
 

@@ -90,5 +90,6 @@
     <circle cx="5" cy="0" r="3" fill="#56d3bd"/><text x="16" y="4" class="detail">No outbound requests</text>
     <circle cx="190" cy="0" r="3" fill="#78a9ff"/><text x="201" y="4" class="detail">Raw lines excluded from reports</text>
     <circle cx="450" cy="0" r="3" fill="#bb9cff"/><text x="461" y="4" class="detail">Optional source IP redaction</text>
+    <circle cx="710" cy="0" r="3" fill="#f1c779"/><text x="721" y="4" class="detail">Cross-host campaign correlation</text>
   </g>
 </svg>

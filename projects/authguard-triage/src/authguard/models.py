@@ -42,6 +42,7 @@ class Finding:
     user: str | None = None
     recommendations: tuple[str, ...] = ()
     evidence_files: tuple[str, ...] = ()
+    evidence_hosts: tuple[str, ...] = ()
 
     def to_dict(self, redact_ips: bool = False) -> dict[str, Any]:
         data = asdict(self)
@@ -50,6 +51,7 @@ class Finding:
         data["evidence_lines"] = list(self.evidence_lines)
         data["recommendations"] = list(self.recommendations)
         data["evidence_files"] = list(self.evidence_files)
+        data["evidence_hosts"] = list(self.evidence_hosts)
         if redact_ips and data["source_ip"]:
             data["source_ip"] = "<redacted>"
         return data
