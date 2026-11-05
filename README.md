@@ -141,16 +141,9 @@ Security frameworks
 
 ### [Container deployment pipeline on AWS](https://github.com/FAHAD-s3do/docker-ecr-deployment)
 
-A Docker/Nginx project with AWS deployment configuration and documented troubleshooting across ECR, ECS Fargate, CodeBuild, and CodePipeline.
+A Docker/Nginx deployment example using AWS ECR, ECS Fargate, CodeBuild, and CodePipeline.
 
-**Explore the implementation:**
-
-- [Docker image](https://github.com/FAHAD-s3do/docker-ecr-deployment/blob/main/Dockerfile) — container packaging for a static Nginx application.
-- [Build configuration](https://github.com/FAHAD-s3do/docker-ecr-deployment/blob/main/buildspec.yml) — image build, ECR publishing, and deployment artifact generation.
-- [ECS configuration](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main/ecs-fargate-deployment) — task-definition template and local configuration renderer.
-- [Troubleshooting notes](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main/codepipeline-cd) — build-context errors, permissions, and container-name mismatches.
-
-**Tools represented:** Docker, Nginx, AWS ECR, ECS Fargate, CodeBuild, CodePipeline, IAM, Python, and Git.
+[Dockerfile](https://github.com/FAHAD-s3do/docker-ecr-deployment/blob/main/Dockerfile) · [Build configuration](https://github.com/FAHAD-s3do/docker-ecr-deployment/blob/main/buildspec.yml) · [ECS configuration](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main/ecs-fargate-deployment) · [Troubleshooting](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main/codepipeline-cd)
 
 ![Security radar: explore, observe, improve](assets/security-radar.svg)
 
