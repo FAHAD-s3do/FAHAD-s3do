@@ -11,7 +11,7 @@ I build small, testable security tools and cloud delivery demos. My recent work 
 ### [LLM Prompt-Injection Evaluation Lab](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab)
 Offline evaluation of synthetic prompt-injection cases with explicit scoring and coverage reporting.
 
-[![CI](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab/actions/runs/40257477032) · [Run instructions and toy examples](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab#run) · [Example fixtures](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab/tree/main/examples)
+[![CI](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab/actions) · [Run instructions and toy examples](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab#run) · [Example fixtures](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab/tree/main/examples)
 
 ```bash
 python3 evaluate.py --responses examples/toy-unsafe.json
@@ -23,7 +23,7 @@ The linked main-branch CI run passed on Oct 26, 2026. Fixtures are synthetic; th
 ### [DevSecOps Pipeline Demo](https://github.com/FAHAD-s3do/devsecops-pipeline-demo)
 A test-driven Python health service with a static policy gate and hardened container CI.
 
-[![CI](https://github.com/FAHAD-s3do/devsecops-pipeline-demo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/FAHAD-s3do/devsecops-pipeline-demo/actions/runs/40623263128) · [Run instructions and examples](https://github.com/FAHAD-s3do/devsecops-pipeline-demo#run) · [Container smoke-test run](https://github.com/FAHAD-s3do/devsecops-pipeline-demo/actions/runs/40623263128)
+[![CI](https://github.com/FAHAD-s3do/devsecops-pipeline-demo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/FAHAD-s3do/devsecops-pipeline-demo/actions) · [Run instructions and examples](https://github.com/FAHAD-s3do/devsecops-pipeline-demo#run) · [Container smoke-test run](https://github.com/FAHAD-s3do/devsecops-pipeline-demo/actions)
 
 ```bash
 python3 -m unittest discover -s tests -v
@@ -33,7 +33,7 @@ python3 security_gate.py app.py
 ### [Web Security Header Auditor](https://github.com/FAHAD-s3do/web-security-header-auditor)
 Offline-first Python checks for common HTTP security headers, with review-oriented findings.
 
-[![CI](https://github.com/FAHAD-s3do/web-security-header-auditor/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/FAHAD-s3do/web-security-header-auditor/actions/runs/40989657868) · [Run instructions and sample fixtures](https://github.com/FAHAD-s3do/web-security-header-auditor#run) · [Workflow diagram](https://github.com/FAHAD-s3do/web-security-header-auditor/blob/main/assets/workflow.svg)
+[![CI](https://github.com/FAHAD-s3do/web-security-header-auditor/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/FAHAD-s3do/web-security-header-auditor/actions) · [Run instructions and sample fixtures](https://github.com/FAHAD-s3do/web-security-header-auditor#run) · [Workflow diagram](https://github.com/FAHAD-s3do/web-security-header-auditor/blob/main/assets/workflow.svg)
 
 ```bash
 python3 auditor.py --fixture examples/headers.json
