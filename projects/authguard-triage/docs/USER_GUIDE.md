@@ -5,10 +5,10 @@ This guide explains how to install AuthGuard, analyze an authorized Linux authen
 ## Requirements
 
 - Python 3.11 or newer
-- A copied Linux authentication log file readable by your account
+- One or more copied Linux authentication log files readable by your account
 - No runtime dependencies beyond the Python standard library
 
-AuthGuard runs on Windows, macOS, and Linux. It analyzes logs exported from Linux hosts; it does not need to run on the host that created the log.
+AuthGuard runs on Windows, macOS, and Linux. It analyzes logs exported from Linux hosts; it does not need to run on the host that created the log. Gzip-compressed files ending in `.gz` are read directly.
 
 ## Install from source
 
@@ -53,9 +53,24 @@ authguard /path/to/auth.log \
 
 The output directory is created when needed. JSON and HTML output paths must be different from each other and from the input log.
 
+Pass rotated logs as additional positional inputs to combine them into one investigation timeline:
+
+```bash
+authguard /var/log/auth.log /var/log/auth.log.1 /var/log/auth.log.2.gz \
+  --year 2026 \
+  --timezone Asia/Karachi \
+  --json out/incident.json \
+  --html out/incident.html \
+  --redact-ips
+```
+
+Files are parsed separately, then events are combined by time before detection rules run. Evidence in combined reports shows the source filename and original line number. Reports contain basenames only, not full local paths. If input files in different directories have the same basename, AuthGuard adds a numeric suffix to distinguish them.
+
+Overlapping log exports are not deduplicated. Avoid including the same time range more than once, since duplicate records can increase counts and create repeated findings.
+
 ### Timestamp handling
 
-AuthGuard accepts common syslog records with month/day/time, ISO timestamps with an explicit UTC offset, and ISO timestamps without an offset. For classic syslog records that omit a year, `--year` supplies the year. For timestamps without an offset, `--timezone` supplies an IANA timezone such as `UTC` or `Asia/Karachi`. The defaults are the current year and UTC.
+AuthGuard accepts common syslog records with month/day/time, ISO timestamps with an explicit UTC offset, and ISO timestamps without an offset. For classic syslog records that omit a year, `--year` supplies the year. For timestamps without an offset, `--timezone` supplies an IANA timezone such as `UTC` or `Asia/Karachi`. The defaults are the current year and UTC. These settings apply to every input in the same invocation.
 
 Use the timezone of the system or logging pipeline that produced the file. A wrong year or timezone can shift event times and affect time-window detections.
 
@@ -124,13 +139,13 @@ When no report path is given, the JSON report is printed to standard output. Exi
 
 ## Understanding reports
 
-Each finding includes a stable finding ID, rule ID, severity, summary, host, time range, source where applicable, event count, original line numbers, and recommended review steps. Use line numbers to inspect the source log in context. Reports do not include raw log lines, sudo command text, or the complete input path.
+Each finding includes a stable finding ID, rule ID, severity, summary, host, time range, source where applicable, event count, original evidence file and line references, and recommended review steps. Use those references to inspect the source log in context. Reports do not include raw log lines, sudo command text, or the complete input path.
 
 `--redact-ips` is useful for examples and sharing, but hostnames, usernames, timestamps, and other context may still identify an environment. Review a report before publishing it.
 
 ## Supported events and known limits
 
-The parser recognizes common `sshd`, `sudo`, and `useradd` records. Unsupported programs or message patterns are counted as ignored; malformed relevant timestamps are counted separately as invalid. This visibility helps identify input that was not analyzed.
+The parser recognizes common `sshd`, `sudo`, and `useradd` records in plain-text and gzip-compressed files. Unsupported programs or message patterns are counted as ignored; malformed relevant timestamps are counted separately as invalid. This visibility helps identify input that was not analyzed.
 
 AuthGuard is not a full SIEM parser or a forensic collection tool. Log rotation gaps, missing records, clock skew, NAT, shared addresses, unusual distribution formats, and account naming conventions can affect findings. Confirm important events against source systems and other evidence.
 

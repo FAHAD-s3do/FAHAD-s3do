@@ -16,6 +16,7 @@ class AuthEvent:
     line_number: int
     source_ip: str | None = None
     user: str | None = None
+    source_file: str = "auth.log"
 
     def to_dict(self, redact_ips: bool = False) -> dict[str, Any]:
         data = asdict(self)
@@ -40,6 +41,7 @@ class Finding:
     source_ip: str | None = None
     user: str | None = None
     recommendations: tuple[str, ...] = ()
+    evidence_files: tuple[str, ...] = ()
 
     def to_dict(self, redact_ips: bool = False) -> dict[str, Any]:
         data = asdict(self)
@@ -47,6 +49,7 @@ class Finding:
             data[key] = getattr(self, key).astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
         data["evidence_lines"] = list(self.evidence_lines)
         data["recommendations"] = list(self.recommendations)
+        data["evidence_files"] = list(self.evidence_files)
         if redact_ips and data["source_ip"]:
             data["source_ip"] = "<redacted>"
         return data

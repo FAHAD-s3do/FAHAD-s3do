@@ -33,7 +33,7 @@ _SEVERITY = {"critical": 0, "high": 1, "medium": 2, "low": 3}
 
 
 def _finding_id(rule_id: str, host: str, key: str, first: AuthEvent) -> str:
-    seed = f"{rule_id}\0{host}\0{key}\0{first.event_id}"
+    seed = f"{rule_id}\0{host}\0{key}\0{first.source_file}\0{first.event_id}"
     return hashlib.sha256(seed.encode("utf-8")).hexdigest()[:12]
 
 
@@ -65,6 +65,7 @@ def analyze_events(events: Iterable[AuthEvent], config: RuleConfig) -> tuple[Fin
                     event.source_ip,
                     event.user,
                     ("Verify the activity with the account owner.", "Prefer named accounts with audited privilege elevation."),
+                    evidence_files=(event.source_file,),
                 )
             )
         elif event.kind == "user_created" and event.user not in config.allowlisted_users:
@@ -83,6 +84,7 @@ def analyze_events(events: Iterable[AuthEvent], config: RuleConfig) -> tuple[Fin
                     None,
                     event.user,
                     ("Confirm the account request and provisioning change.", "Review the account's groups and authentication settings."),
+                    evidence_files=(event.source_file,),
                 )
             )
 
@@ -127,6 +129,7 @@ def analyze_events(events: Iterable[AuthEvent], config: RuleConfig) -> tuple[Fin
                 success.source_ip,
                 success.user,
                 ("Verify the login with the account owner.", "Review nearby authentication and privilege-elevation events."),
+                evidence_files=tuple(event.source_file for event in evidence),
             )
         )
 
@@ -150,6 +153,7 @@ def _failure_finding(host: str, source_ip: str, cluster: list[AuthEvent], config
         source_ip,
         None,
         ("Check whether the source is expected.", "Review firewall, rate-limit, and SSH authentication controls."),
+        evidence_files=tuple(event.source_file for event in cluster),
     )
 
 
@@ -178,6 +182,7 @@ def _cluster_findings(host: str, source_ip: str, cluster: list[AuthEvent], confi
                 source_ip,
                 None,
                 ("Check whether the source is an approved identity or vulnerability scanner.", "Review authentication outcomes for the targeted accounts."),
+                evidence_files=tuple(event.source_file for event in cluster),
             )
         )
     return findings

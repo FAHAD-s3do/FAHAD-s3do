@@ -126,7 +126,7 @@ def parse_auth_log(
                 continue
 
         identity = hashlib.sha256(f"{source_label}\0{line_number}\0{raw}".encode("utf-8", "replace")).hexdigest()[:16]
-        events.append(AuthEvent(identity, timestamp, host, kind, line_number, source_ip, user))
+        events.append(AuthEvent(identity, timestamp, host, kind, line_number, source_ip, user, source_label))
         counts[kind] += 1
 
     events.sort(key=lambda event: (event.timestamp, event.line_number))

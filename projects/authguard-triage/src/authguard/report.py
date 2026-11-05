@@ -19,12 +19,15 @@ def build_report(
     summary: ParseSummary,
     findings: tuple[Finding, ...],
     redact_ips: bool,
+    source_names: tuple[str, ...] | None = None,
 ) -> dict[str, Any]:
+    display_sources = [Path(name).name for name in (source_names or (source_name,))]
     return {
-        "schema_version": 1,
-        "tool": "AuthGuard Triage",
+        "schema_version": 2,
+        "tool": "AuthGuard",
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-        "source_file": Path(source_name).name,
+        "source_file": display_sources[0] if len(display_sources) == 1 else f"{len(display_sources)} input files",
+        "source_files": display_sources,
         "privacy": {"raw_log_lines_included": False, "source_ips_redacted": redact_ips},
         "summary": summary.to_dict(),
         "finding_count": len(findings),
@@ -42,7 +45,7 @@ def render_html(report: dict[str, Any]) -> str:
         f"<tr><td>{html.escape(str(f['severity']).upper())}</td>"
         f"<td>{html.escape(f['title'])}</td><td>{html.escape(f['host'])}</td>"
         f"<td>{html.escape(str(f.get('source_ip') or '—'))}</td>"
-        f"<td>{html.escape(', '.join(map(str, f['evidence_lines'])))}</td>"
+        f"<td>{html.escape(', '.join(f'{name}:{line}' for name, line in zip(f.get('evidence_files', []), f['evidence_lines']))) or html.escape(', '.join(map(str, f['evidence_lines'])))}</td>"
         f"<td>{html.escape(f['summary'])}<ul>"
         f"{''.join('<li>' + html.escape(item) + '</li>' for item in f['recommendations'])}</ul></td></tr>"
         for f in report["findings"]
@@ -69,7 +72,7 @@ table{{width:100%;border-collapse:collapse;background:white;margin-top:1rem}}th,
 <div class="card"><strong>Invalid lines</strong><br>{summary["invalid_lines"]}</div>
 </div>
 <p class="note">Findings are triage leads, not proof of compromise. Raw log lines are not included in this report.</p>
-<table><thead><tr><th>Severity</th><th>Finding</th><th>Host</th><th>Source</th><th>Evidence lines</th><th>Why it matched</th></tr></thead>
+<table><thead><tr><th>Severity</th><th>Finding</th><th>Host</th><th>Source</th><th>Evidence file and line</th><th>Why it matched</th></tr></thead>
 <tbody>{cells}</tbody></table>
 </body></html>
 """

@@ -3,10 +3,13 @@
   "findings": [
     {
       "event_count": 1,
+      "evidence_files": [
+        "auth.log"
+      ],
       "evidence_lines": [
         7
       ],
-      "finding_id": "13beddd55515",
+      "finding_id": "dbcbc18e80f9",
       "first_seen": "2026-10-31T04:06:00Z",
       "host": "edge-01",
       "last_seen": "2026-10-31T04:06:00Z",
@@ -23,6 +26,13 @@
     },
     {
       "event_count": 5,
+      "evidence_files": [
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log"
+      ],
       "evidence_lines": [
         1,
         2,
@@ -30,7 +40,7 @@
         4,
         5
       ],
-      "finding_id": "40d760443a27",
+      "finding_id": "946ea01d1545",
       "first_seen": "2026-10-31T04:00:00Z",
       "host": "edge-01",
       "last_seen": "2026-10-31T04:04:00Z",
@@ -47,6 +57,14 @@
     },
     {
       "event_count": 6,
+      "evidence_files": [
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log"
+      ],
       "evidence_lines": [
         1,
         2,
@@ -55,7 +73,7 @@
         5,
         6
       ],
-      "finding_id": "2758d5200b49",
+      "finding_id": "1eb6cb3e7586",
       "first_seen": "2026-10-31T04:00:00Z",
       "host": "edge-01",
       "last_seen": "2026-10-31T04:05:00Z",
@@ -72,10 +90,13 @@
     },
     {
       "event_count": 1,
+      "evidence_files": [
+        "auth.log"
+      ],
       "evidence_lines": [
         8
       ],
-      "finding_id": "fe8f1eedaf63",
+      "finding_id": "eca28d350210",
       "first_seen": "2026-10-31T04:07:00Z",
       "host": "edge-01",
       "last_seen": "2026-10-31T04:07:00Z",
@@ -92,6 +113,13 @@
     },
     {
       "event_count": 5,
+      "evidence_files": [
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log"
+      ],
       "evidence_lines": [
         10,
         11,
@@ -99,7 +127,7 @@
         13,
         14
       ],
-      "finding_id": "45a4d3ec5327",
+      "finding_id": "3f55491eee1b",
       "first_seen": "2026-10-31T05:00:00Z",
       "host": "edge-01",
       "last_seen": "2026-10-31T05:04:00Z",
@@ -116,6 +144,13 @@
     },
     {
       "event_count": 5,
+      "evidence_files": [
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log",
+        "auth.log"
+      ],
       "evidence_lines": [
         10,
         11,
@@ -123,7 +158,7 @@
         13,
         14
       ],
-      "finding_id": "0b72deda5169",
+      "finding_id": "bd321287ad2b",
       "first_seen": "2026-10-31T05:00:00Z",
       "host": "edge-01",
       "last_seen": "2026-10-31T05:04:00Z",
@@ -139,13 +174,16 @@
       "user": null
     }
   ],
-  "generated_at": "2026-11-05T09:23:13.517020Z",
+  "generated_at": "2026-11-05T09:46:27.366835Z",
   "privacy": {
     "raw_log_lines_included": false,
     "source_ips_redacted": true
   },
-  "schema_version": 1,
+  "schema_version": 2,
   "source_file": "auth.log",
+  "source_files": [
+    "auth.log"
+  ],
   "summary": {
     "event_counts": {
       "ssh_failed": 10,
@@ -158,5 +196,5 @@
     "parsed_events": 13,
     "total_lines": 14
   },
-  "tool": "AuthGuard Triage"
+  "tool": "AuthGuard"
 }

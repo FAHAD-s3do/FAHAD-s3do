@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
   <title id="title">AuthGuard triage workflow</title>
-  <desc id="desc">A local authentication log is parsed and normalized, analyzed by configurable detection rules, and summarized in JSON and HTML reports. No network connection is used.</desc>
+  <desc id="desc">Local authentication logs, including rotated gzip archives, are parsed and normalized, analyzed by configurable detection rules, and summarized in JSON and HTML reports. No network connection is used.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b1424"/>
@@ -52,8 +52,8 @@
     <rect x="17" y="18" width="34" height="34" rx="9" fill="#183b45"/>
     <path class="icon" d="M26 28h16M26 34h16M26 40h11M23 25v18"/>
     <text x="17" y="78" class="tiny">01 · INPUT</text>
-    <text x="17" y="101" class="label">Authentication log</text>
-    <text x="17" y="121" class="detail">Copied auth.log or syslog file</text>
+    <text x="17" y="101" class="label">Authentication logs</text>
+    <text x="17" y="121" class="detail">Current, rotated, or .gz archives</text>
   </g>
   <g transform="translate(326 143)">
     <rect class="card" width="184" height="140" rx="14"/>

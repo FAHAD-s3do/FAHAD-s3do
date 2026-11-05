@@ -4,7 +4,7 @@
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Offline Linux authentication log analysis with explainable findings.** AuthGuard turns a copied `auth.log` or syslog file into portable JSON or HTML reports. It uses the Python standard library at runtime and makes no network requests.
+**Offline Linux authentication log analysis with explainable findings.** AuthGuard combines current and rotated `auth.log` files, including gzip archives, into one timeline and portable JSON or HTML reports. It uses the Python standard library at runtime and makes no network requests.
 
 ## How it works
 
@@ -46,7 +46,7 @@ source .venv/bin/activate
 python -m pip install .
 ```
 
-Analyze a log and create both report formats:
+Analyze a single log and create both report formats:
 
 ```bash
 authguard /path/to/auth.log \
@@ -55,6 +55,17 @@ authguard /path/to/auth.log \
   --config config/example.json \
   --json out/report.json \
   --html out/report.html \
+  --redact-ips
+```
+
+Analyze rotated logs together so detections can span the rotation boundary:
+
+```bash
+authguard /var/log/auth.log /var/log/auth.log.1 /var/log/auth.log.2.gz \
+  --year 2026 \
+  --timezone Asia/Karachi \
+  --json out/incident.json \
+  --html out/incident.html \
   --redact-ips
 ```
 
@@ -73,11 +84,13 @@ The fixture demonstrates six findings across SSH failure bursts, a multi-account
 - [Sample JSON report](examples/report.json)
 - [Sample HTML report](examples/report.html)
 
+In combined reports, evidence references identify the source and original line, such as `auth.log.1:42`.
+
 Use `authguard --help` or `python -m authguard --help` to see all options. `--fail-on high` returns exit code 1 when a high or critical finding is present.
 
 ## Privacy and safe handling
 
-- Reports include summaries, explanations, recommendations, and source line numbers; they omit raw log lines, sudo command text, and full local paths.
+- Reports include summaries, explanations, recommendations, and source file/line references; they omit raw log lines, sudo command text, and full local paths.
 - Use `--redact-ips` before sharing reports when source addresses are not needed.
 - Reports are written atomically, and output paths cannot overwrite the input log.
 - Treat source logs and unredacted reports as sensitive operational data.
