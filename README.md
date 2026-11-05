@@ -144,48 +144,20 @@ Security frameworks
 
 A retrospective write-up of a Windows lab using `getsystem`, with an author-reported SYSTEM identity. Includes an animated overview, evidence limitations and a checklist for a documented repeat. Original logs and screenshots are unavailable.
 
-## `~/labs` — Security topics studied & ongoing practice
+## Security focus
 
-My study and lab work spans offensive security, defensive analysis and AI security. The technical directions below combine topics already studied with areas for deeper practice; they are not a claim that every technique has been implemented.
+My current focus is application and cloud security, defensive monitoring, AI security, and DevSecOps. Project READMEs describe implemented work; the areas below include ongoing study.
 
-### `~/offensive` — Web, network & adversary techniques
+- **Offensive security:** Web and network assessment, Windows/Linux security fundamentals, and exploit concepts in authorized labs.
+- **Defensive security:** Log analysis, incident investigation, detection engineering, and system hardening.
+- **AI security:** Prompt injection, model and agent boundaries, and synthetic evaluation methods. See the [LLM evaluation project](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab).
+- **Cloud and DevSecOps:** Docker-based delivery, AWS deployment, CI/CD security, and least-privilege access. See the [AWS deployment project](https://github.com/FAHAD-s3do/docker-ecr-deployment).
 
-- **Web application assessment:** OWASP WSTG and Top 10; deeper practice in authentication and session handling, access-control boundaries, input validation, injection flaws, SSRF, file handling and business-logic abuse. Focus: root cause, reproducible evidence and remediation retesting.
-- **Network assessment & pivoting:** service enumeration, routing and segmentation, tunneling concepts and multi-hop access paths. Recorded lab topics include OSPF and EAP-MD5 security; packet captures and full configurations remain to be recovered.
-- **Windows privilege escalation:** account and token context, local Administrator versus SYSTEM, and Meterpreter identity verification. My reconstructed `getsystem` lab records a reported SYSTEM identity; deeper study includes service permissions, impersonation concepts and UAC boundaries.
-- **Linux privilege escalation:** privilege boundaries and kernel-exploitation concepts; further practice targets SUID/SGID behavior, Linux capabilities, sudo rules, scheduled tasks and writable service configurations.
-- **Exploit development & binary analysis:** stack-based buffer overflows, instruction and stack pointers, input offsets, bad-character analysis and crash interpretation. Deeper study: calling conventions, exploit reliability and how memory protections affect control-flow corruption.
-- **Kernel security:** Linux and Windows user/kernel boundaries and exploitation concepts. Further study includes kernel attack surfaces, memory-corruption primitives and mitigations; no working kernel exploit is claimed.
+## Next projects
 
-### `~/defensive` — Detection, investigation & validation
-
-- **Security analytics:** Elasticsearch SOC practice and continued work toward event normalization, useful search queries, timelines and evidence-based investigation.
-- **Detection engineering:** connect offensive behavior to observable host and network activity; develop and evaluate Sigma/YARA rules and MITRE ATT&amp;CK mappings as future lab deliverables.
-- **Investigation workflow:** correlate process, authentication, service and network events; distinguish suspicious activity from normal behavior and document visibility gaps.
-- **Purple-team validation:** a development goal is to pair an authorized test with captured telemetry, a detection hypothesis, false-positive analysis and a remediation retest.
-
-### `~/ai-security` — LLM, agent & model security
-
-- **LLM security study:** OWASP LLM Top 10, prompt injection, sensitive-information disclosure, unsafe output handling and excessive agency.
-- **Advanced evaluation focus:** direct versus indirect prompt injection, retrieval trust boundaries, tool permissions, agent authorization and cross-session data isolation.
-- **Evaluation methodology:** planned synthetic test cases with explicit expected behavior, observed results, failure categories and regression checks; garak, PyRIT and promptfoo are exploration targets.
-- **ML foundations for security:** recorded exercises include anomaly detection, feature engineering, model evaluation, NLP, sequence modeling and transfer learning. These provide a study foundation; a deployed security model or measured detection performance is not claimed.
-
-### `~/devsecops` — Security automation & delivery
-
-- **Automation:** Python and shell scripting for repeatable checks, structured evidence collection and analysis.
-- **Cloud and container security:** build on the linked AWS container-delivery project with deeper work on IAM scope, secrets handling, CI/CD trust boundaries and container permissions.
-- **Planned pipeline checks:** dependency and image scanning, static analysis, infrastructure-policy checks and secret detection, with findings triaged and fixes verified.
-
-**Evidence:** linked projects contain the available implementation material. Retrospective lab records are explicitly marked where original scripts, logs or screenshots are missing.
-
-## `~/roadmap` — Next portfolio projects
-
-- **Red + blue lab:** pair a controlled security test with observable logs, a detection, and remediation.
-- **AI security evaluation:** create synthetic prompt-injection test cases and document expected versus observed behavior.
-- **DevSecOps pipeline:** extend the container project with dependency/image checks, scoped permissions, and verification evidence.
-
-These projects are planned; completed work will be linked here as it is published.
+- Pair an authorized security test with captured telemetry, a detection, and a remediation retest.
+- Expand AI security evaluations with documented test cases and results.
+- Add dependency, container, and infrastructure checks to the CI/CD demo.
 
 ## `~/notes` — How I document my work
 
