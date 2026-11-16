@@ -1,4 +1,4 @@
-![Fahad Adeel — Cybersecurity, AI Security and DevSecOps](assets/fahad-banner.svg)
+![Fahad Adeel — Cybersecurity, AI Application Security and DevSecOps](assets/fahad-banner.svg)
 
 <p align="left">
   <a href="https://www.linkedin.com/in/fahad-a-845013279"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
@@ -9,19 +9,19 @@
 
 **Cybersecurity · AI Application Security · DevSecOps · Cloud & Linux Automation**
 
-I’m a computer science student focused on practical cybersecurity engineering. I work across web application security, AI application security testing, defensive security automation, and secure cloud delivery.
+I’m a computer science student building practical experience in cybersecurity engineering, AI application security, and secure infrastructure.
 
-I build small, reproducible tools and document how they work, how they are tested, and where their limitations are. My goal is to develop the engineering depth to help secure modern applications, infrastructure, and AI-enabled systems.
+I currently work on **AI application security testing with FusionAI**, focusing on authorized assessment, evidence-based findings, and clear technical documentation. I build reproducible tools and document their behavior, test coverage, assumptions, and limitations.
 
-- **Current focus:** AI application security, web security testing, Linux/Bash automation, and DevSecOps.
-- **Security approach:** understand the attack surface, validate findings with evidence, and document practical remediation.
-- **Learning path:** cybersecurity, cloud infrastructure, containers, and AI operations.
+- **Current focus:** AI application security, web and API security, Linux/Bash automation, and DevSecOps.
+- **Education:** Intermediate Computer Science; Diploma in Artificial Intelligence Operations (EduQual Level 6), in progress.
+- **Security approach:** define scope, reproduce behavior, validate findings, and document practical remediation.
 
 ---
 
 ## Selected projects
 
-| Project | What it does |
+| Project | Overview |
 |---|---|
 | [Web Security Header Auditor](https://github.com/FAHAD-s3do/web-security-header-auditor) | Python CLI for reviewing HTTP security headers, cookie attributes, and selected CORS configurations. Includes offline fixtures, tests, and JSON/HTML reporting. |
 | [SSH Login Anomaly Analyzer](https://github.com/FAHAD-s3do/ssh-login-anomaly-analyzer) | Offline SSH log analysis that correlates failed-login bursts with subsequent successful authentication. |
@@ -30,7 +30,7 @@ I build small, reproducible tools and document how they work, how they are teste
 | [File Integrity Monitor](https://github.com/FAHAD-s3do/file-integrity-monitor) | SHA-256 baseline and change-detection utility with JSON reporting and coverage-aware results. |
 | [Docker to AWS ECR Deployment](https://github.com/FAHAD-s3do/docker-ecr-deployment) | Container deployment workflow using Docker, Amazon ECR, ECS Fargate, CodeBuild, and CodePipeline. |
 
-I aim to keep each repository reproducible: clear setup instructions, test commands, sample data, and honest scope/limitations.
+Each project aims to provide reproducible setup instructions, test commands, sample data, and honest scope and limitations.
 
 ## Technical focus
 
@@ -38,20 +38,20 @@ I aim to keep each repository reproducible: clear setup instructions, test comma
 - Web and API security testing
 - HTTP security headers, authentication, and access-control review
 - AI application security and prompt-injection evaluation
-- SSH log analysis, file integrity monitoring, and defensive automation
-- Security testing in owned labs and explicitly authorized environments
+- SSH log analysis and file integrity monitoring
+- Authorized testing in owned labs and approved environments
 
 **Engineering & infrastructure**
 - Python and Bash scripting
 - Linux, Git, and GitHub Actions
 - Docker and container workflows
-- AWS deployment services: ECR, ECS Fargate, CodeBuild, and CodePipeline
+- AWS: ECR, ECS Fargate, CodeBuild, and CodePipeline
 - Continuing study: Kubernetes, Terraform, Ansible, and cloud security
 
-## How I work
+## Engineering workflow
 
-1. Define the problem and scope.
-2. Build or reproduce the test case.
+1. Define the problem, authorization, and scope.
+2. Build or reproduce a test case.
 3. Validate behavior with tests and evidence.
 4. Document assumptions, limitations, and remediation.
 5. Improve the implementation through review and iteration.
@@ -63,4 +63,4 @@ I aim to keep each repository reproducible: clear setup instructions, test comma
 
 ---
 
-<sub>All security testing is performed in personal labs or on systems where explicit authorization has been granted. Project demonstrations use synthetic or non-sensitive data unless stated otherwise.</sub>
+<sub>Security testing is performed only in personal labs or on systems where explicit authorization has been granted. Public project demonstrations use synthetic or non-sensitive data unless stated otherwise.</sub>
