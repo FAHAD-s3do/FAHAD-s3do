@@ -1,163 +1,66 @@
-![FERO — Cybersecurity, AI Security and DevSecOps](assets/fahad-banner.svg)
+![Fahad Adeel — Cybersecurity, AI Security and DevSecOps](assets/fahad-banner.svg)
 
-![Profile views](https://komarev.com/ghpvc/?username=FAHAD-s3do&label=PROFILE+VIEWS&color=0e7490&style=for-the-badge)
+<p align="left">
+  <a href="https://www.linkedin.com/in/fahad-a-845013279"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+  <a href="https://github.com/FAHAD-s3do?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Projects-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub repositories" /></a>
+</p>
 
-# Hi, I'm Fahad
+# Fahad Adeel
 
-**Cybersecurity · Offensive & Defensive Security · AI Security · DevSecOps**
+**Cybersecurity · AI Application Security · DevSecOps · Cloud & Linux Automation**
 
-I focus on offensive and defensive security, AI security, and DevSecOps. My work combines hands-on security labs with cloud deployment projects to understand how systems fail, how defenders detect those failures, and how engineering can prevent them.
+I’m a computer science student focused on practical cybersecurity engineering. I work across web application security, AI application security testing, defensive security automation, and secure cloud delivery.
 
-I have completed cybersecurity coursework and am continuing my studies in DevOps, cloud infrastructure, and artificial intelligence. My direction spans red teaming and blue teaming, supported by Linux, networking, Python, and cloud automation.
+I build small, reproducible tools and document how they work, how they are tested, and where their limitations are. My goal is to develop the engineering depth to help secure modern applications, infrastructure, and AI-enabled systems.
 
-<a href="https://www.linkedin.com/in/fahad-a-845013279"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&amp;logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHJlY3Qgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiByeD0iMiIgZmlsbD0id2hpdGUiLz48dGV4dCB4PSIzIiB5PSIxOSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjE5IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzBBNjZDMiI%2BaW48L3RleHQ%2BPC9zdmc%2B" alt="Connect on LinkedIn" /></a>
-<a href="https://github.com/FAHAD-s3do/docker-ecr-deployment"><img src="https://img.shields.io/badge/Featured_Project-102747?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="View featured project on GitHub" /></a>
+- **Current focus:** AI application security, web security testing, Linux/Bash automation, and DevSecOps.
+- **Security approach:** understand the attack surface, validate findings with evidence, and document practical remediation.
+- **Learning path:** cybersecurity, cloud infrastructure, containers, and AI operations.
 
-![Animated terminal showing my security focus](assets/security-terminal.svg)
+---
 
-## `~/security` — Security focus
+## Selected projects
 
-![Red and Blue Team signals converge into Purple Team collaboration](assets/purple-team.svg)
-
-| Area | Learning and project focus |
+| Project | What it does |
 |---|---|
-| Offensive security & red teaming | Web and network security testing, vulnerability analysis, Windows internals, and exploit fundamentals in isolated labs |
-| Defensive security & blue teaming | Log analysis, detection engineering, incident investigation, and system hardening |
-| SIEM & security analytics | ELK / Elastic Stack (Elasticsearch, Logstash, Kibana), centralized logs, event correlation, and threat-hunting workflows |
-| Cloud security | AWS IAM, least-privilege access, network segmentation, cloud audit logs, secrets management, and misconfiguration review |
-| Monitoring & observability | Grafana dashboards, Prometheus metrics, alerting, and using operational telemetry to support security investigations |
-| Container & Kubernetes security | Image vulnerability assessment, workload permissions, secrets handling, and network policies |
-| AI security & AI red teaming | Prompt injection, sensitive-data exposure, model and agent evaluations, and security boundaries in AI applications |
-| DevOps & DevSecOps | Container delivery, cloud permissions, CI/CD security, and repeatable infrastructure workflows |
+| [Web Security Header Auditor](https://github.com/FAHAD-s3do/web-security-header-auditor) | Python CLI for reviewing HTTP security headers, cookie attributes, and selected CORS configurations. Includes offline fixtures, tests, and JSON/HTML reporting. |
+| [SSH Login Anomaly Analyzer](https://github.com/FAHAD-s3do/ssh-login-anomaly-analyzer) | Offline SSH log analysis that correlates failed-login bursts with subsequent successful authentication. |
+| [LLM Prompt-Injection Evaluation Lab](https://github.com/FAHAD-s3do/llm-prompt-injection-evaluation-lab) | Reproducible evaluator for synthetic prompt-injection cases, with explicit coverage reporting and documented limitations. |
+| [DevSecOps Pipeline Demo](https://github.com/FAHAD-s3do/devsecops-pipeline-demo) | Demonstrates a lightweight Python security gate, automated tests, source hashing, and GitHub Actions CI. |
+| [File Integrity Monitor](https://github.com/FAHAD-s3do/file-integrity-monitor) | SHA-256 baseline and change-detection utility with JSON reporting and coverage-aware results. |
+| [Docker to AWS ECR Deployment](https://github.com/FAHAD-s3do/docker-ecr-deployment) | Container deployment workflow using Docker, Amazon ECR, ECS Fargate, CodeBuild, and CodePipeline. |
 
-<img src="assets/circuit-divider.svg" alt="" width="1000" />
+I aim to keep each repository reproducible: clear setup instructions, test commands, sample data, and honest scope/limitations.
 
-## `~/toolkit` — Technical stack & learning areas
+## Technical focus
 
-**Cloud & containers**
+**Security**
+- Web and API security testing
+- HTTP security headers, authentication, and access-control review
+- AI application security and prompt-injection evaluation
+- SSH log analysis, file integrity monitoring, and defensive automation
+- Security testing in owned labs and explicitly authorized environments
 
-<img src="https://skillicons.dev/icons?i=aws,docker,nginx,kubernetes&amp;perline=4" alt="AWS, Docker, Nginx and Kubernetes" />
+**Engineering & infrastructure**
+- Python and Bash scripting
+- Linux, Git, and GitHub Actions
+- Docker and container workflows
+- AWS deployment services: ECR, ECS Fargate, CodeBuild, and CodePipeline
+- Continuing study: Kubernetes, Terraform, Ansible, and cloud security
 
-**Security systems & observability**
+## How I work
 
-<img src="https://skillicons.dev/icons?i=linux,windows,kali,elasticsearch,grafana,prometheus&amp;perline=6" alt="Linux, Windows, Kali Linux, Elasticsearch, Grafana and Prometheus" />
+1. Define the problem and scope.
+2. Build or reproduce the test case.
+3. Validate behavior with tests and evidence.
+4. Document assumptions, limitations, and remediation.
+5. Improve the implementation through review and iteration.
 
-**Automation & infrastructure**
+## Connect
 
-<img src="https://skillicons.dev/icons?i=python,bash,git,github,terraform,ansible&amp;perline=6" alt="Python, Bash, Git, GitHub, Terraform and Ansible" />
+- **LinkedIn:** [Fahad Adeel](https://www.linkedin.com/in/fahad-a-845013279)
+- **GitHub:** [@FAHAD-s3do](https://github.com/FAHAD-s3do)
 
-**Security testing & AI security**
+---
 
-*Tools and frameworks for continued learning and lab exploration; demonstrated work is documented in the linked projects.*
-
-**`~/offensive` — Offensive security**
-
-![Metasploit](https://img.shields.io/badge/Metasploit-2596CD?style=flat-square&logo=metasploit&logoColor=white)
-![Burp Suite](https://img.shields.io/badge/Burp%20Suite-FF6633?style=flat-square&logo=burpsuite&logoColor=white)
-![Nmap](https://img.shields.io/badge/Nmap-214478?style=flat-square)
-![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white)
-![OWASP ZAP](https://img.shields.io/badge/OWASP%20ZAP-00549E?style=flat-square)
-![Nuclei](https://img.shields.io/badge/Nuclei-3B82F6?style=flat-square)
-![Ghidra](https://img.shields.io/badge/Ghidra-A31F34?style=flat-square)
-![Impacket](https://img.shields.io/badge/Impacket-334155?style=flat-square)
-
-**`~/ai-security` — AI security & red teaming**
-
-![garak](https://img.shields.io/badge/garak-6D28D9?style=flat-square)
-![PyRIT](https://img.shields.io/badge/PyRIT-4338CA?style=flat-square)
-![promptfoo](https://img.shields.io/badge/promptfoo-2563EB?style=flat-square)
-![MITRE ATLAS](https://img.shields.io/badge/MITRE%20ATLAS-7C3AED?style=flat-square)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-6B5200?style=flat-square&logo=huggingface&logoColor=white)
-
-Security frameworks
-
-![OWASP Top 10](https://img.shields.io/badge/OWASP%20Top%2010-000000?style=flat-square&logo=owasp&logoColor=white)
-![OWASP LLM Top 10](https://img.shields.io/badge/OWASP%20LLM%20Top%2010-4338CA?style=flat-square&logo=owasp&logoColor=white)
-![MITRE ATT&CK](https://img.shields.io/badge/MITRE%20ATT%26CK-B91C1C?style=flat-square)
-
-**`~/defensive` — Blue Team / DFIR · Learning roadmap**
-
-![Wazuh](https://img.shields.io/badge/Wazuh-175B8C?style=flat-square)
-![Splunk](https://img.shields.io/badge/Splunk-175B8C?style=flat-square)
-![Sysmon](https://img.shields.io/badge/Sysmon-175B8C?style=flat-square)
-![Sigma](https://img.shields.io/badge/Sigma-175B8C?style=flat-square)
-![YARA](https://img.shields.io/badge/YARA-175B8C?style=flat-square)
-![Suricata](https://img.shields.io/badge/Suricata-175B8C?style=flat-square)
-![Zeek](https://img.shields.io/badge/Zeek-175B8C?style=flat-square)
-![Volatility](https://img.shields.io/badge/Volatility-175B8C?style=flat-square)
-
-**DevSecOps — Learning roadmap**
-
-![Trivy](https://img.shields.io/badge/Trivy-305B45?style=flat-square)
-![Semgrep](https://img.shields.io/badge/Semgrep-305B45?style=flat-square)
-![Checkov](https://img.shields.io/badge/Checkov-305B45?style=flat-square)
-![Gitleaks](https://img.shields.io/badge/Gitleaks-305B45?style=flat-square)
-![OWASP Dependency-Check](https://img.shields.io/badge/OWASP%20Dependency--Check-305B45?style=flat-square)
-
-*Planned tools for future labs and projects; these badges do not indicate completed implementations.*
-
-**Elastic Stack**
-
-![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=flat-square&logo=elasticsearch&logoColor=white)
-![Logstash](https://img.shields.io/badge/Logstash-005571?style=flat-square&logo=logstash&logoColor=white)
-![Kibana](https://img.shields.io/badge/Kibana-005571?style=flat-square&logo=kibana&logoColor=white)
-
-**AWS delivery & cloud security**
-
-![Amazon ECR](https://img.shields.io/badge/Amazon_ECR-Container_Registry-FF9900?style=flat-square)
-![Amazon ECS](https://img.shields.io/badge/Amazon_ECS-Fargate-FF9900?style=flat-square)
-![AWS CodeBuild](https://img.shields.io/badge/AWS-CodeBuild-2E7D32?style=flat-square)
-![AWS CodePipeline](https://img.shields.io/badge/AWS-CodePipeline-2E7D32?style=flat-square)
-![AWS IAM](https://img.shields.io/badge/AWS-IAM-DD344C?style=flat-square)
-![Amazon CloudWatch](https://img.shields.io/badge/Amazon-CloudWatch-8C4FFF?style=flat-square)
-
-**Memory safety & programming foundations**
-
-<img src="https://skillicons.dev/icons?i=c,cpp&amp;perline=2" alt="C and C++ — memory-safety learning foundations" />
-
-*Tools represented across projects and ongoing learning; the context for each area is listed below.*
-
-| Domain | Technologies and topics | Context |
-|---|---|---|
-| Cloud & containers | AWS, Docker, Nginx, ECR, ECS Fargate, IAM | Public deployment project |
-| CI/CD & automation | CodeBuild, CodePipeline, Git, Python, Bash | Project configuration and ongoing practice |
-| Systems & networking | Linux, Windows, TCP/IP, DNS, HTTP, virtual machines | Cybersecurity foundations and lab practice |
-| Offensive security | Kali Linux, Nmap, Netcat, Metasploit concepts, Immunity Debugger, memory safety | Current learning and isolated lab work |
-| Defensive security | Log analysis, SIEM concepts, incident investigation, detection engineering, hardening | Security focus and continued development |
-| SIEM & observability | Elasticsearch, Logstash, Kibana, Grafana, Prometheus | Learning and project focus |
-| Cloud security | AWS IAM, CloudTrail, CloudWatch, VPC security, secrets management | Development focus; existing AWS project linked below |
-| Infrastructure & orchestration | Kubernetes, Terraform, Ansible | Ongoing learning |
-| AI & AI security | Machine learning foundations, LLM application security, prompt injection, model/agent evaluation | Ongoing study and planned evaluations |
-
-<img src="assets/circuit-divider.svg" alt="" width="1000" />
-
-## Featured projects
-
-- **[Container deployment pipeline on AWS](https://github.com/FAHAD-s3do/docker-ecr-deployment)** — Docker/Nginx deployment using AWS ECR, ECS Fargate, CodeBuild, and CodePipeline. [Configuration](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main) · [Troubleshooting](https://github.com/FAHAD-s3do/docker-ecr-deployment/tree/main/codepipeline-cd)
-- **[Linux Threat Hunter](projects/linux-threat-hunter/README.md)** — Python triage tool for process, network, persistence, and SSH activity, with JSON/HTML reports and synthetic test data.
-
-## Reconstructed lab notes
-
-[Browse selected security and applied AI lab records](labs/README.md) — six additional past activities, with implementation evidence pending.
-
-### [Windows privilege escalation with Meterpreter](labs/windows-privilege-escalation/README.md)
-
-A retrospective write-up of a Windows lab using `getsystem`, with an author-reported SYSTEM identity. Includes an animated overview, evidence limitations and a checklist for a documented repeat. Original logs and screenshots are unavailable.
-
-## Security focus
-
-My work and ongoing study cover four areas:
-
-![Animated radar showing offensive security, defensive security, AI security, and cloud and DevSecOps](assets/security-radar.svg)
-
-Project READMEs describe the work I have implemented; the animation also includes areas I am continuing to study.
-
-## `~/notes` — How I document my work
-
-My goal for each project is a clear problem statement, reproducible setup, evidence of results, troubleshooting notes, and practical improvements.
-
-Security testing is limited to my own lab environments and explicitly authorized systems.
-
-## `~/activity` — Contribution activity
-
-![Blue snake animation of my GitHub contributions](assets/contribution-snake.svg)
+<sub>All security testing is performed in personal labs or on systems where explicit authorization has been granted. Project demonstrations use synthetic or non-sensitive data unless stated otherwise.</sub>
