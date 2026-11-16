@@ -1,6 +1,7 @@
 ![Fahad Adeel — Cybersecurity, AI Application Security and DevSecOps](assets/fahad-banner.svg)
 
 <p align="left">
+  <img src="https://komarev.com/ghpvc/?username=FAHAD-s3do&label=PROFILE+VIEWS&color=16a34a&style=flat-square" alt="GitHub profile views" />
   <a href="https://www.linkedin.com/in/fahad-a-845013279"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://github.com/FAHAD-s3do?tab=repositories"><img src="https://img.shields.io/badge/GitHub-Projects-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub repositories" /></a>
 </p>
@@ -8,6 +9,8 @@
 # Fahad Adeel
 
 **Cybersecurity · AI Application Security · DevSecOps · Cloud & Linux Automation**
+
+> Building, testing, and documenting security tools for modern applications and infrastructure.
 
 I’m a computer science student building practical experience in cybersecurity engineering, AI application security, and secure infrastructure.
 
@@ -50,11 +53,9 @@ Each project aims to provide reproducible setup instructions, test commands, sam
 
 ## Engineering workflow
 
-1. Define the problem, authorization, and scope.
-2. Build or reproduce a test case.
-3. Validate behavior with tests and evidence.
-4. Document assumptions, limitations, and remediation.
-5. Improve the implementation through review and iteration.
+`01 / SCOPE` → `02 / REPRODUCE` → `03 / VALIDATE` → `04 / DOCUMENT` → `05 / IMPROVE`
+
+I value reproducible evidence, clear technical writing, and security findings that lead to actionable remediation.
 
 ## Connect
 
